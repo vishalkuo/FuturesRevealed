@@ -24,7 +24,16 @@
             android:src = "@drawable/multi_coloured_logo"
             android:gravity = "center_vertical"
             />
+
+         <Button
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="30dp"
+             android:text = "About"/>
+
+            
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>
