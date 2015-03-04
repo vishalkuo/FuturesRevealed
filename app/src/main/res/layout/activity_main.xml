@@ -29,7 +29,19 @@
              android:layout_width="250dp"
              android:layout_height="wrap_content"
              android:layout_marginTop="30dp"
-             android:text = "About"/>
+             android:text = "About"
+             android:textColor="#FFFFFF"
+             android:background="@drawable/custom_button"/>
+
+         <Button
+             android:id = "@+id/signUp"
+             android:layout_width="250dp"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:text="Sign Up"
+             android:textColor="#FFFFFF"
+             android:background="@drawable/custom_button"
+             android:onClick="send2"/>
 
             
         </LinearLayout>
