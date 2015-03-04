@@ -58,7 +58,6 @@ public class AsyncSend extends AsyncTask<String, String, String> {
             if (resEntity != null) {
 
                 responseStr = EntityUtils.toString(resEntity).trim();
-                Log.v("LOL", "Response: " +  responseStr);
                 didGetSent = true;
 
                 // you can add an if statement here and do other actions based on the response
@@ -89,7 +88,7 @@ public class AsyncSend extends AsyncTask<String, String, String> {
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         if (didGetSent) {
-            Toast.makeText(c, responseStr, Toast.LENGTH_LONG).show();
+            Toast.makeText(c, "Got it, thanks " + name + "!", Toast.LENGTH_LONG).show();
         }
     }
 }

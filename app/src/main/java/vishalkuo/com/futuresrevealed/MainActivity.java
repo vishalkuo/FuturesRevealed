@@ -35,9 +35,26 @@ import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        try{
+            if (alertDialog != null && alertDialog.isShowing()){
+                alertDialog.dismiss();
+            }
+        }
+        catch (Exception e){
+            Log.d("lots of problems", e.getMessage());
+        }
+
+
+    }
+
     private ImageView mainLogo;
     private String url = "http://futuresrevealed.ca";
     private Context c = this;
+    private AlertDialog alertDialog;
 
     private Button signUp;
 
@@ -72,7 +89,10 @@ public class MainActivity extends ActionBarActivity {
 
         final EditText name = (EditText)promptsView.findViewById(R.id.nameInput);
         final EditText email = (EditText)promptsView.findViewById(R.id.emailInput);
-
+        email.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
+        builder.setTitle("Sign up!");
+        builder.setMessage("Sign up to receive email updates for useful information and upcoming talks." +
+                "\nNote: Futures Revealed will never distribute your email. ");
         builder
                 .setCancelable(false)
                 .setPositiveButton("Sign me up!", new DialogInterface.OnClickListener(){
@@ -80,13 +100,12 @@ public class MainActivity extends ActionBarActivity {
                         new AsyncSend(c, name.getText().toString(), email.getText().toString()).execute();
                     }
                 })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
-                    public void onClick(DialogInterface dialog, int id){
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                     }
                 });
-
-        AlertDialog alertDialog = builder.create();
+        alertDialog = builder.create();
         alertDialog.show();
 
     }
