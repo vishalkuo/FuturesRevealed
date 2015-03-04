@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    public void send2(View v){
+    public void sendEmail(View v){
         new AsyncSend(this).execute();
     }
 

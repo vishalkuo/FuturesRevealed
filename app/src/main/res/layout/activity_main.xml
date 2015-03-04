@@ -41,7 +41,7 @@
              android:text="Sign Up"
              android:textColor="#FFFFFF"
              android:background="@drawable/custom_button"
-             android:onClick="send2"/>
+             android:onClick="sendEmail"/>
 
             
         </LinearLayout>
