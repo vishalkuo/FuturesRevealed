@@ -27,6 +27,8 @@ public class AsyncSend extends AsyncTask<String, String, String> {
     private Context c;
     private Boolean didGetSent = false;
     private String responseStr = "";
+    private String name = "";
+    private String email = "";
 
 
     @Override
@@ -44,9 +46,8 @@ public class AsyncSend extends AsyncTask<String, String, String> {
 
             // add your data
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-            nameValuePairs.add(new BasicNameValuePair("firstname", "Mike"));
-            nameValuePairs.add(new BasicNameValuePair("lastname", "Dalisay"));
-            nameValuePairs.add(new BasicNameValuePair("email", "mike@testmail.com"));
+            nameValuePairs.add(new BasicNameValuePair("firstname", name));
+            nameValuePairs.add(new BasicNameValuePair("email", email));
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
@@ -78,8 +79,10 @@ public class AsyncSend extends AsyncTask<String, String, String> {
 
      }
 
-    public AsyncSend(Context c){
+    public AsyncSend(Context c, String name, String email){
         this.c = c;
+        this.name = name;
+        this.email = email;
     }
 
     @Override

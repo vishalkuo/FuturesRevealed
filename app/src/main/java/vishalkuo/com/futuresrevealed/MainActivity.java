@@ -1,15 +1,21 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import org.apache.http.HttpEntity;
@@ -31,6 +37,7 @@ import java.util.List;
 public class MainActivity extends ActionBarActivity {
     private ImageView mainLogo;
     private String url = "http://futuresrevealed.ca";
+    private Context c = this;
 
     private Button signUp;
 
@@ -57,7 +64,31 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void sendEmail(View v){
-        new AsyncSend(this).execute();
+        LayoutInflater li = LayoutInflater.from(c);
+        View promptsView = li.inflate(R.layout.dialog, null);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(promptsView);
+
+        final EditText name = (EditText)promptsView.findViewById(R.id.nameInput);
+        final EditText email = (EditText)promptsView.findViewById(R.id.emailInput);
+
+        builder
+                .setCancelable(false)
+                .setPositiveButton("Sign me up!", new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        new AsyncSend(c, name.getText().toString(), email.getText().toString()).execute();
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
     }
 
     @Override
