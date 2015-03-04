@@ -1,0 +1,92 @@
+package vishalkuo.com.futuresrevealed;
+
+import android.content.Context;
+import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.Toast;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by vishalkuo on 15-03-04.
+ */
+public class AsyncSend extends AsyncTask<String, String, String> {
+    private Context c;
+    private Boolean didGetSent = false;
+    private String responseStr = "";
+
+
+    @Override
+    protected String doInBackground(String... strings) {
+        try{
+            // url where the data will be posted
+            String postReceiverUrl = "http://vishalkuo.com/phptest.php";
+            Log.v("postURL: ", postReceiverUrl);
+
+            // HttpClient
+            HttpClient httpClient = new DefaultHttpClient();
+
+            // post header
+            HttpPost httpPost = new HttpPost(postReceiverUrl);
+
+            // add your data
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+            nameValuePairs.add(new BasicNameValuePair("firstname", "Mike"));
+            nameValuePairs.add(new BasicNameValuePair("lastname", "Dalisay"));
+            nameValuePairs.add(new BasicNameValuePair("email", "mike@testmail.com"));
+
+            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+            // execute HTTP post request
+            HttpResponse response = httpClient.execute(httpPost);
+            HttpEntity resEntity = response.getEntity();
+
+            if (resEntity != null) {
+
+                responseStr = EntityUtils.toString(resEntity).trim();
+                Log.v("LOL", "Response: " +  responseStr);
+                didGetSent = true;
+
+                // you can add an if statement here and do other actions based on the response
+                }
+            }
+            catch (ClientProtocolException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+
+
+     }
+
+    public AsyncSend(Context c){
+        this.c = c;
+    }
+
+    @Override
+    protected void onPostExecute(String s) {
+        super.onPostExecute(s);
+        if (didGetSent) {
+            Toast.makeText(c, responseStr, Toast.LENGTH_LONG).show();
+        }
+    }
+}

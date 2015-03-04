@@ -57,58 +57,8 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void send2(View v){
-        new send().execute();
+        new AsyncSend(this).execute();
     }
-
-    public class send extends AsyncTask<String, String, String>{
-        @Override
-        protected String doInBackground(String... strings) {
-            try{
-                // url where the data will be posted
-                String postReceiverUrl = "http://vishalkuo.com/phptest.php";
-                Log.v("postURL: ",  postReceiverUrl);
-
-                // HttpClient
-                HttpClient httpClient = new DefaultHttpClient();
-
-                // post header
-                HttpPost httpPost = new HttpPost(postReceiverUrl);
-
-                // add your data
-                List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-                    nameValuePairs.add(new BasicNameValuePair("firstname", "Mike"));
-                nameValuePairs.add(new BasicNameValuePair("lastname", "Dalisay"));
-                nameValuePairs.add(new BasicNameValuePair("email", "mike@testmail.com"));
-
-                httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
-                // execute HTTP post request
-                HttpResponse response = httpClient.execute(httpPost);
-                HttpEntity resEntity = response.getEntity();
-
-                if (resEntity != null) {
-
-                    String responseStr = EntityUtils.toString(resEntity).trim();
-                    Log.v("LOL", "Response: " +  responseStr);
-
-                    // you can add an if statement here and do other actions based on the response
-                }
-
-            } catch (ClientProtocolException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return null;
-            }
-
-
-        protected void onPreExecute(){
-            super.onPreExecute();
-        }
-    }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
