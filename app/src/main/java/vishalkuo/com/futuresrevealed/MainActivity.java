@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mainLogo = (ImageView)findViewById(R.id.mainlogo);
+        /*mainLogo = (ImageView)findViewById(R.id.mainlogo);
         mainLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,10 +72,9 @@ public class MainActivity extends ActionBarActivity {
                 i.setData(Uri.parse(url));
                 startActivity(i);
             }
-        });
+        });*/
 
         signUp = (Button)findViewById(R.id.signUp);
-
 
 
     }
