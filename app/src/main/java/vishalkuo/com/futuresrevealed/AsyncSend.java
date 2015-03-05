@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class AsyncSend extends AsyncTask<String, String, String> {
     private Context c;
-    private Boolean didGetSent = false;
+    private int didGetSent = 0;
     private String responseStr = "";
     private String name = "";
     private String email = "";
@@ -58,7 +58,7 @@ public class AsyncSend extends AsyncTask<String, String, String> {
             if (resEntity != null) {
 
                 responseStr = EntityUtils.toString(resEntity).trim();
-                didGetSent = true;
+                didGetSent = 1;
 
                 // you can add an if statement here and do other actions based on the response
                 }
@@ -87,8 +87,12 @@ public class AsyncSend extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        if (didGetSent) {
+        if (didGetSent == 1) {
             Toast.makeText(c, "Got it, thanks " + name + "!", Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            Toast.makeText(c, "Something went wrong!", Toast.LENGTH_LONG).show();
         }
     }
 }
