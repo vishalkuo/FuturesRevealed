@@ -27,6 +27,8 @@ public class AsyncSend extends AsyncTask<String, String, String> {
     private Context c;
     private Boolean didGetSent = false;
     private String responseStr = "";
+    private String name = "";
+    private String email = "";
 
 
     @Override
@@ -44,9 +46,8 @@ public class AsyncSend extends AsyncTask<String, String, String> {
 
             // add your data
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-            nameValuePairs.add(new BasicNameValuePair("firstname", "Mike"));
-            nameValuePairs.add(new BasicNameValuePair("lastname", "Dalisay"));
-            nameValuePairs.add(new BasicNameValuePair("email", "mike@testmail.com"));
+            nameValuePairs.add(new BasicNameValuePair("firstname", name));
+            nameValuePairs.add(new BasicNameValuePair("email", email));
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
 
@@ -57,7 +58,6 @@ public class AsyncSend extends AsyncTask<String, String, String> {
             if (resEntity != null) {
 
                 responseStr = EntityUtils.toString(resEntity).trim();
-                Log.v("LOL", "Response: " +  responseStr);
                 didGetSent = true;
 
                 // you can add an if statement here and do other actions based on the response
@@ -78,15 +78,17 @@ public class AsyncSend extends AsyncTask<String, String, String> {
 
      }
 
-    public AsyncSend(Context c){
+    public AsyncSend(Context c, String name, String email){
         this.c = c;
+        this.name = name;
+        this.email = email;
     }
 
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         if (didGetSent) {
-            Toast.makeText(c, responseStr, Toast.LENGTH_LONG).show();
+            Toast.makeText(c, "Got it, thanks " + name + "!", Toast.LENGTH_LONG).show();
         }
     }
 }
