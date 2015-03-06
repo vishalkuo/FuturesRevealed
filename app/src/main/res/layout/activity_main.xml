@@ -28,23 +28,13 @@
 
 
          <ImageView
+             android:id = "@+id/mainlogo"
              android:src = "@drawable/multi_coloured_logo"
              android:adjustViewBounds="true"
-             android:layout_width="125dp"
-             android:layout_height="125dp"
-             android:layout_margin="5dp"
-             android:textColor="#FFFFFF"/>
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:layout_margin="5dp"/>
 
-            <Button
-                style = "@style/Button"
-                android:gravity="center|bottom"
-                android:layout_margin="5dp"
-                android:paddingBottom="20dp"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:text = "Our Team"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/apptheme_btn_default_holo_light"/>
             </LinearLayout>
 
         <LinearLayout
@@ -52,55 +42,55 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity = "center">
-         <Button
-             style = "@style/Button"
+
+            <ImageButton
+                android:src="@drawable/aboutcopy"
+                android:id = "@+id/about"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:paddingBottom="20dp"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:background="@drawable/apptheme_btn_default_holo_light"/>
+
+            <ImageButton
+             android:src = "@drawable/signup"
+             android:scaleType="fitCenter"
              android:gravity="center|bottom"
              android:layout_margin="5dp"
              android:paddingBottom="20dp"
              android:id = "@+id/signUp"
-             android:layout_width="125dp"
-             android:layout_height="125dp"
-             android:text="Sign Up"
+             android:layout_width="115dp"
+             android:layout_height="115dp"
              android:textColor="#FFFFFF"
              android:background="@drawable/apptheme_btn_default_holo_light"
              android:onClick="sendEmail"/>
 
-            <Button
-                style = "@style/Button"
-                android:gravity="center|bottom"
-                android:layout_margin="5dp"
-                android:paddingBottom="20dp"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:text = "Contact Us"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/apptheme_btn_default_holo_light"/>
+
             </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity = "center">
-            <Button
-                style = "@style/Button"
-                android:gravity="center|bottom"
+            <ImageButton
+                android:id = "@+id/contact"
+                android:src = "@drawable/contact"
+                android:scaleType="fitCenter"
                 android:layout_margin="5dp"
-                android:paddingBottom="20dp"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:background="@drawable/apptheme_btn_default_holo_light"/>
+            <ImageButton
+                android:id = "@+id/surveys"
+                android:src="@drawable/surveys"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
                 android:text = "Surveys"
-                android:textColor="#FFFFFF"
                 android:background="@drawable/apptheme_btn_default_holo_light"/>
-            <Button
-                style = "@style/Button"
-                android:gravity="center|bottom"
-                android:layout_margin="5dp"
-                android:paddingBottom="20dp"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:text = "Join the team"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/apptheme_btn_default_holo_light"/>
+
             </LinearLayout>
         </LinearLayout>
 

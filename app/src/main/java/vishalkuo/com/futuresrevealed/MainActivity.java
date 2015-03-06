@@ -16,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import org.apache.http.HttpEntity;
@@ -35,28 +36,15 @@ import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-
-        try{
-            if (alertDialog != null && alertDialog.isShowing()){
-                alertDialog.dismiss();
-            }
-        }
-        catch (Exception e){
-            Log.d("lots of problems", e.getMessage());
-        }
-
-
-    }
 
     private ImageView mainLogo;
+    private ImageButton about;
+    private ImageButton contact;
+    private ImageButton surveys;
     private String url = "http://futuresrevealed.ca";
     private Context c = this;
     private AlertDialog alertDialog;
 
-    private Button signUp;
 
 
     @Override
@@ -64,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*mainLogo = (ImageView)findViewById(R.id.mainlogo);
+        mainLogo = (ImageView)findViewById(R.id.mainlogo);
         mainLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,10 +60,33 @@ public class MainActivity extends ActionBarActivity {
                 i.setData(Uri.parse(url));
                 startActivity(i);
             }
-        });*/
+        });
 
-        signUp = (Button)findViewById(R.id.signUp);
+        about = (ImageButton)findViewById(R.id.about);
+        about.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(v.getContext(), aboutActivity.class);
+                startActivity(i);
+            }
+        });
 
+        contact = (ImageButton)findViewById(R.id.contact);
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        surveys = (ImageButton)findViewById(R.id.surveys);
+        surveys.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), surveyActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 
@@ -130,4 +141,20 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        try{
+            if (alertDialog != null && alertDialog.isShowing()){
+                alertDialog.dismiss();
+            }
+        }
+        catch (Exception e){
+            Log.d("lots of problems", e.getMessage());
+        }
+
+
+    }
+
 }
