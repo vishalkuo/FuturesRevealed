@@ -6,4 +6,6 @@
     <string name="title_activity_about">aboutActivity</string>
     <string name="title_activity_contact">contactActivity</string>
     <string name="title_activity_survey">surveyActivit</string>
+
+    <string name = "aboutFV">We are a student-run, not for profit organization that is working towards better preparing high school students for their futures, specifically with their transition in university through presentations and relevant experience.</string>
 </resources>
