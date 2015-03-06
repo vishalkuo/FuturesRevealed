@@ -75,7 +75,8 @@ public class MainActivity extends ActionBarActivity {
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(view.getContext(), contactActivity.class);
+                startActivity(i);
             }
         });
 

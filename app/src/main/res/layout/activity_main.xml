@@ -46,7 +46,7 @@
             <ImageButton
                 android:src="@drawable/aboutcopy"
                 android:id = "@+id/about"
-                android:layout_margin="5dp"
+                android:layout_margin="10dp"
                 android:scaleType="fitCenter"
                 android:paddingBottom="20dp"
                 android:layout_width="115dp"
@@ -56,13 +56,11 @@
             <ImageButton
              android:src = "@drawable/signup"
              android:scaleType="fitCenter"
-             android:gravity="center|bottom"
-             android:layout_margin="5dp"
+             android:layout_margin="10dp"
              android:paddingBottom="20dp"
              android:id = "@+id/signUp"
              android:layout_width="115dp"
              android:layout_height="115dp"
-             android:textColor="#FFFFFF"
              android:background="@drawable/apptheme_btn_default_holo_light"
              android:onClick="sendEmail"/>
 
@@ -77,15 +75,17 @@
                 android:id = "@+id/contact"
                 android:src = "@drawable/contact"
                 android:scaleType="fitCenter"
-                android:layout_margin="5dp"
+                android:paddingBottom="20dp"
+                android:layout_margin="10dp"
                 android:layout_width="115dp"
                 android:layout_height="115dp"
                 android:background="@drawable/apptheme_btn_default_holo_light"/>
             <ImageButton
                 android:id = "@+id/surveys"
                 android:src="@drawable/surveys"
+                android:paddingBottom="20dp"
                 android:scaleType="fitCenter"
-                android:layout_margin="5dp"
+                android:layout_margin="10dp"
                 android:layout_width="115dp"
                 android:layout_height="115dp"
                 android:text = "Surveys"

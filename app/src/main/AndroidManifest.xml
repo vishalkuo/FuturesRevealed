@@ -25,11 +25,11 @@
         </activity>
         <activity
             android:name=".contactActivity"
-            android:label="@string/title_activity_contact" >
+            android:label="Contact" >
         </activity>
         <activity
             android:name=".surveyActivity"
-            android:label="@string/title_activity_survey" >
+            android:label="Surveys" >
         </activity>
     </application>
 
