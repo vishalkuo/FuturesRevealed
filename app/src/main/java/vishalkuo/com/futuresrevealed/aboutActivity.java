@@ -2,16 +2,25 @@ package vishalkuo.com.futuresrevealed;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class aboutActivity extends ActionBarActivity {
+
+    private TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        tv = (TextView)findViewById(R.id.Visit);
+        tv.setText(Html.fromHtml("Visit our <a href = \"http://www.futuresrevealed.ca\">website</a> for more information"));
+        tv.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
 

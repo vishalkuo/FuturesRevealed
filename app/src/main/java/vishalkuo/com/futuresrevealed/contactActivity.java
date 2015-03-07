@@ -10,16 +10,14 @@ import android.widget.TextView;
 
 public class contactActivity extends ActionBarActivity {
 
-    private TextView tv;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact2);
 
-        tv = (TextView)findViewById(R.id.Visit);
-        tv.setText("Visit our website: <a href = \"http://www.futuresrevealed.ca\">here.</a>");
-        tv.setMovementMethod(LinkMovementMethod.getInstance());
+
     }
 
 
