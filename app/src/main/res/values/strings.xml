@@ -7,5 +7,9 @@
     <string name="title_activity_contact">contactActivity</string>
     <string name="title_activity_survey">surveyActivit</string>
 
-    <string name = "aboutFV">We are a student-run, not for profit organization that is working towards better preparing high school students for their futures, specifically with their transition in university through presentations and relevant experience.</string>
+    <string name = "aboutFV">We are a student-run, not for profit organization that is working towards better preparing high school students for their futures,</string>
+    <string name = "part2">specifically with their transition in university through presentations and relevant experience.</string>
+    <string name = "values">&#8226; To learn with our students and clients so that we are always well informed and ready to go. \n\n
+    &#8226; To share with students our experience and knowledge in hopes that we can further their potential. \n\n
+    &#8226; To improve the environment that we enter in one way or another, always striving for tangible change.</string>
 </resources>
