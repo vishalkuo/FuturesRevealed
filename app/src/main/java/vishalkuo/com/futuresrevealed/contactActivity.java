@@ -17,6 +17,7 @@ import android.widget.TextView;
 public class contactActivity extends ActionBarActivity {
     private ImageButton facebook;
     private ImageButton twitter;
+    private ImageButton linkedin;
 
 
     @Override
@@ -41,6 +42,16 @@ public class contactActivity extends ActionBarActivity {
             @Override
             public void onClick(View view){
                 Intent i = getOpenTwitterIntent(getApplicationContext());
+                startActivity(i);
+            }
+        });
+
+        linkedin = (ImageButton)findViewById(R.id.linkedin);
+
+        linkedin.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = getOpenLinkedIntent(getApplicationContext());
                 startActivity(i);
             }
         });
@@ -87,6 +98,13 @@ public class contactActivity extends ActionBarActivity {
         }catch(Exception e){
             return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.twitter.com/futuresrevealed"));
         }
+    }
+
+    private static Intent getOpenLinkedIntent(Context c){
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(
+                "https://www.linkedin.com/company/9257128?trk=tyah&trkInfo=tarId%3A1421712447867%2Ctas%3Afutures%20revealed%2Cidx%3A1-1-1"));
+        return i;
     }
 }
 
