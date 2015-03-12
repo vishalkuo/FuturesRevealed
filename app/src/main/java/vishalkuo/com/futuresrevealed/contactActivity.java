@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -20,6 +21,7 @@ public class contactActivity extends ActionBarActivity {
     private ImageButton linkedin;
     private Button email;
     private Button web;
+    private ImageView mainLogo;
 
 
     @Override
@@ -71,6 +73,16 @@ public class contactActivity extends ActionBarActivity {
         web= (Button)findViewById(R.id.website);
 
         web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.futuresrevealed.ca"));
+                startActivity(i);
+            }
+        });
+
+        mainLogo = (ImageView)findViewById(R.id.mainlogo);
+        mainLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
