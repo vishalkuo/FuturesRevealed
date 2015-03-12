@@ -1,15 +1,22 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
 public class contactActivity extends ActionBarActivity {
-
+    private ImageButton facebook;
+    private ImageButton twitter;
 
 
     @Override
@@ -17,9 +24,28 @@ public class contactActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact2);
 
+        facebook = (ImageButton)findViewById(R.id.facebook);
+
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getOpenFacebookIntent(getApplicationContext());
+                startActivity(i);
+
+            }
+        });
+
+        twitter = (ImageButton)findViewById(R.id.twitter);
+
+        twitter.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent i = getOpenTwitterIntent(getApplicationContext());
+                startActivity(i);
+            }
+        });
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -42,4 +68,26 @@ public class contactActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+    private static Intent getOpenFacebookIntent(Context c){
+        try{
+            c.getPackageManager().getPackageInfo("com.facebook.katana", 0);
+            return new Intent(Intent.ACTION_VIEW,  Uri.parse("fb://page/1382959188665784"));
+        }
+        catch(Exception e){
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/futuresrevealed"));
+        }
+    }
+
+    private static Intent getOpenTwitterIntent(Context c){
+        try{
+            c.getPackageManager().getPackageInfo("com.twitter.android", 0);
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?screen_name=futuresrevealed"));
+        }catch(Exception e){
+            return new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.twitter.com/futuresrevealed"));
+        }
+    }
 }
+
+
