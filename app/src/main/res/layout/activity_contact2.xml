@@ -11,7 +11,7 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="10dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:id = "@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,9 +82,11 @@
                 <ImageButton
                     android:src="@drawable/facebook"
                     android:id = "@+id/facebook"
-                    android:layout_margin="15dp"
+
                     android:scaleType="fitCenter"
                     android:padding="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:layout_width="0dp"
                     android:layout_weight="0.25"
                     android:layout_height="75dp"
@@ -93,7 +95,8 @@
                 <ImageButton
                     android:src="@drawable/twitter"
                     android:id = "@+id/twitter"
-                    android:layout_margin="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:scaleType="fitCenter"
                     android:padding="20dp"
                     android:layout_width="0dp"
@@ -103,15 +106,47 @@
                 <ImageButton
                     android:src="@drawable/linkedin"
                     android:id = "@+id/linkedin"
-                    android:layout_margin="15dp"
                     android:scaleType="fitCenter"
                     android:padding="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
                     android:layout_width="0dp"
                     android:layout_weight="0.25"
                     android:layout_height="75dp"
                     android:background="@drawable/apptheme_btn_default_holo_light"/>
             </LinearLayout>
 
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id = "@+id/supplementary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linkedin">
+
+            <Button
+                style = "@style/Button"
+                android:id = "@+id/website"
+                android:layout_margin="15dp"
+                android:textColor="#FFFFFF"
+                android:text="Web"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/apptheme_btn_default_holo_light"/>
+
+            <Button
+                style="@style/Button"
+                android:id = "@+id/email"
+                android:layout_margin="15dp"
+                android:text = "Email"
+                android:textColor="#FFFFFF"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/apptheme_btn_default_holo_light"/>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
