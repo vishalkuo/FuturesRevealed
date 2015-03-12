@@ -18,6 +18,8 @@ public class contactActivity extends ActionBarActivity {
     private ImageButton facebook;
     private ImageButton twitter;
     private ImageButton linkedin;
+    private Button email;
+    private Button web;
 
 
     @Override
@@ -52,6 +54,27 @@ public class contactActivity extends ActionBarActivity {
             @Override
             public void onClick(View view){
                 Intent i = getOpenLinkedIntent(getApplicationContext());
+                startActivity(i);
+            }
+        });
+
+        email = (Button)findViewById(R.id.email);
+
+        email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = getOpenEmailIntent(getApplicationContext());
+                startActivity(i);
+            }
+        });
+
+        web= (Button)findViewById(R.id.website);
+
+        web.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.futuresrevealed.ca"));
                 startActivity(i);
             }
         });
@@ -104,6 +127,13 @@ public class contactActivity extends ActionBarActivity {
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(
                 "https://www.linkedin.com/company/9257128?trk=tyah&trkInfo=tarId%3A1421712447867%2Ctas%3Afutures%20revealed%2Cidx%3A1-1-1"));
+        return i;
+    }
+
+    private static Intent getOpenEmailIntent(Context c){
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("plain/text");
+        i.putExtra(Intent.EXTRA_EMAIL, new String[] {"info@futuresrevealed.com"});
         return i;
     }
 }
