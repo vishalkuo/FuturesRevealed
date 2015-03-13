@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-3dd623a69f9ce8731ee8259c4defc6cf54c63f21.jar" />
-    </item>
-    <item
-        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/pre-dexed/debug/classes-3c555b66990cd17ab00ac1f3f8ad680b9932599d.jar" />
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-3429ee7b352193faa1d71144e662c8927100253e.jar" />
     </item>
     <item
         jar="/Applications/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b6df98d4794085161863af40b8f48b305692e751.jar" />
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b6df98d4794085161863af40b8f48b305692e751.jar" />
     </item>
     <item
-        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/app/build/intermediates/pre-dexed/debug/classes-cf81e29f48847b6392706eae9f21b9af0f1193eb.jar" />
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-efd937826d7e2f4194a30a46bfe2877cfe2d6275.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-9675b12ef4a4d1c1895125168c0810d1fab8aa9f.jar" />
     </item>
 
 </items>
