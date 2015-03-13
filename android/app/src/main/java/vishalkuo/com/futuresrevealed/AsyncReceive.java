@@ -1,6 +1,8 @@
 package vishalkuo.com.futuresrevealed;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.view.View;
@@ -94,7 +96,10 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view,
                                                 int position, long id) {
-                            Toast.makeText(c, "You Clicked on "+resList.get(position).get("name"), Toast.LENGTH_SHORT).show();
+                            String intSite = resList.get(position).get("website");
+                            Intent i = new Intent(Intent.ACTION_VIEW);
+                            i.setData(Uri.parse(intSite));
+                            c.startActivity(i);
                         }
                     });
 
