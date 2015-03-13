@@ -60,7 +60,7 @@ public class AsyncSend extends AsyncTask<String, String, String> {
                 responseStr = EntityUtils.toString(resEntity).trim();
                 didGetSent = 1;
 
-                // you can add an if statement here and do other actions based on the response
+
                 }
             }
             catch (ClientProtocolException e) {

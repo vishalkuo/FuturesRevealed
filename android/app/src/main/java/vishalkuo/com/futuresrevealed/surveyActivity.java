@@ -1,5 +1,6 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 public class surveyActivity extends ActionBarActivity {
     private ListView listView;
     private ProgressBar spinner;
+    private Context c = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +28,7 @@ public class surveyActivity extends ActionBarActivity {
         spinner = (ProgressBar)findViewById(R.id.progBar);
         spinner.setVisibility(View.GONE);
 
-        
+        new AsyncReceive(spinner, c).execute();
 
         String[] values = new String[]{
                 "A", "B", "C", "D", "E"
