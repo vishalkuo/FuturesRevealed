@@ -8,11 +8,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
 public class surveyActivity extends ActionBarActivity {
     private ListView listView;
+    private ProgressBar spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,11 @@ public class surveyActivity extends ActionBarActivity {
         setContentView(R.layout.activity_survey);
 
         listView = (ListView)findViewById(R.id.SurveyList);
+
+        spinner = (ProgressBar)findViewById(R.id.progBar);
+        spinner.setVisibility(View.GONE);
+
+        
 
         String[] values = new String[]{
                 "A", "B", "C", "D", "E"
