@@ -31,6 +31,7 @@ public class AsyncReceive extends AsyncTask<String, String, String> {
     private ProgressBar prog;
     private int status = 0;
     private InputStream in;
+    private JSONArray jarr;
 
     public AsyncReceive(ProgressBar prog, Context c){
         this.prog = prog;
@@ -44,7 +45,10 @@ public class AsyncReceive extends AsyncTask<String, String, String> {
         if (status == 0){
             Toast.makeText(c, "Something went wrong!", Toast.LENGTH_SHORT).show();
         }
+
     }
+
+
 
     @Override
     protected void onPreExecute() {
@@ -55,7 +59,7 @@ public class AsyncReceive extends AsyncTask<String, String, String> {
     @Override
     protected String doInBackground(String... strings) {
         try{
-            String postUrl = "http://www.vishalkuo.com/phpGet";
+            String postUrl = "http://www.vishalkuo.com/phpGet.php";
             Log.v("Attempt Conn: ", postUrl);
 
 
@@ -90,10 +94,11 @@ public class AsyncReceive extends AsyncTask<String, String, String> {
         }
 
         try{
-            JSONArray jarr = new JSONArray(result);
+            jarr = new JSONArray(result);
             for (int i = 0; i < jarr.length(); i++){
                 JSONObject jdata = jarr.getJSONObject(i);
-                Log.i("logging", "name: " + jdata.getString("name") +  "description: " + jdata.getString("description"));
+                Log.i("logging", "name: " + jdata.getString("name") +  " description: " + jdata.getString("description")
+                + " website: " + jdata.getString("url"));
 
             }
 
