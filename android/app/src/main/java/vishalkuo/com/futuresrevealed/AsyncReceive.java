@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
@@ -40,7 +39,9 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
     private TextView name;
     private TextView description;
     private TextView website;
+    private TextView nothingfound;
     private ProgressBar prog;
+    private boolean validData = false;
     private int status = 0;
     private InputStream in;
     private JSONArray jarr = null;
@@ -53,7 +54,7 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
 
 
     public AsyncReceive(ProgressBar prog, Context c, ListView l,
-                        TextView n, TextView d,TextView w){
+                        TextView n, TextView d,TextView w, TextView not){
         this.prog = prog;
         this.c = c;
         this.listview = l;
@@ -61,6 +62,7 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
         this.description = d;
         this.website = w;
         resList = new ArrayList<HashMap<String, String>>();
+        this.nothingfound = not;
     }
 
     @Override
@@ -72,14 +74,19 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
         }
         else{
             try{
+
+
                 res = jarr;
+                if (jarr == null){
+                    nothingfound.setText("No surveys found! Check back later.");
+                    return;
+                }
                 for (int i = 0; i < res.length(); i++){
                     JSONObject j = res.getJSONObject(i);
 
                     String _n = j.getString(_NAME);
                     String _d = j.getString(_DESCRIPTION);
                     String _w = j.getString("url");
-                    Log.d("TEST", _w);
 
                     HashMap<String, String> map = new HashMap<String, String>();
                     map.put(_NAME, _n);
@@ -152,15 +159,18 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
             in.close();
 
             result = sb.toString();
+            validData = true;
         }
         catch(IOException e){
             e.printStackTrace();
+            validData = false;
         }
 
         try{
             jarr = new JSONArray(result);
         }catch(JSONException e){
             e.printStackTrace();
+            validData = false;
         }
 
         return jarr;

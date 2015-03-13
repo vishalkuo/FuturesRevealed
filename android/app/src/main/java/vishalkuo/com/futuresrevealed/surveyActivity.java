@@ -21,6 +21,7 @@ public class surveyActivity extends ActionBarActivity {
     private TextView name;
     private TextView description;
     private TextView website;
+    private TextView nothingfound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,9 @@ public class surveyActivity extends ActionBarActivity {
         name = (TextView)findViewById(R.id.name);
         description = (TextView)findViewById(R.id.description);
         website = (TextView)findViewById(R.id.url);
+        nothingfound = (TextView)findViewById(R.id.nothingfound);
 
-        new AsyncReceive(spinner, c, listView, name, description, website).execute();
+        new AsyncReceive(spinner, c, listView, name, description, website, nothingfound).execute();
 
 
     }
