@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -17,6 +18,9 @@ public class surveyActivity extends ActionBarActivity {
     private ListView listView;
     private ProgressBar spinner;
     private Context c = this;
+    private TextView name;
+    private TextView description;
+    private TextView website;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,29 +32,12 @@ public class surveyActivity extends ActionBarActivity {
         spinner = (ProgressBar)findViewById(R.id.progBar);
         spinner.setVisibility(View.GONE);
 
-        new AsyncReceive(spinner, c).execute();
 
-        String[] values = new String[]{
-                "A", "B", "C", "D", "E"
-        };
+        name = (TextView)findViewById(R.id.name);
+        description = (TextView)findViewById(R.id.description);
+        website = (TextView)findViewById(R.id.url);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
-
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                int itemPosition = i;
-
-                String itemValue = (String)listView.getItemAtPosition(itemPosition);
-
-                Toast.makeText(getApplicationContext(), "Position: " + itemPosition + " List Item: "
-                + itemValue, Toast.LENGTH_LONG).show();
-
-            }
-        });
+        new AsyncReceive(spinner, c, listView, name, description, website).execute();
 
 
     }
