@@ -7,11 +7,18 @@
     tools:context="vishalkuo.com.futuresrevealed.surveyActivity"
     android:background="#F4F5FE">
 
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp">
+
     <ListView
         android:visibility="invisible"
         android:id = "@+id/SurveyList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></ListView>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,5 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
     </LinearLayout>
+
+
 
 </RelativeLayout>
