@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1EBF882F-1881-40F3-8CDD-37D8AC167F7A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Futures Revealed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>787E68001B9CCEF3B800E887EF88A1D78BF7B503</key>
+		<string>https://github.com/vishalkuo/FuturesRevealed.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iPhone/Futures Revealed/Futures Revealed.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>787E68001B9CCEF3B800E887EF88A1D78BF7B503</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vishalkuo/FuturesRevealed.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>787E68001B9CCEF3B800E887EF88A1D78BF7B503</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>787E68001B9CCEF3B800E887EF88A1D78BF7B503</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FuturesRevealed</string>
+		</dict>
+	</array>
+</dict>
+</plist>
