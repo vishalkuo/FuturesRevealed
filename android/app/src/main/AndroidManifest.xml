@@ -22,7 +22,8 @@
         </activity>
         <activity
             android:name=".aboutActivity"
-            android:label="About" >
+            android:label="About"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".contactActivity"
