@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
@@ -15,6 +16,8 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -42,16 +45,27 @@ public class MainActivity extends Activity {
     private ImageButton about;
     private ImageButton contact;
     private ImageButton surveys;
+    private ImageButton signup;
     private String url = "http://futuresrevealed.ca";
     private Context c = this;
     private AlertDialog alertDialog;
+    boolean didStart = false;
 
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        didStart = true;
+        outState.putBoolean("didStart", didStart);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Animation scale = AnimationUtils.loadAnimation(this,
+                R.anim.scale);
 
         mainLogo = (ImageView)findViewById(R.id.mainlogo);
         mainLogo.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +104,14 @@ public class MainActivity extends Activity {
             }
         });
 
+        signup = (ImageButton)findViewById(R.id.signUp);
+
+        if (savedInstanceState == null){
+            contact.startAnimation(scale);
+            about.startAnimation(scale);
+            surveys.startAnimation(scale);
+            signup.startAnimation(scale);
+        }
     }
 
     public void sendEmail(View v){
