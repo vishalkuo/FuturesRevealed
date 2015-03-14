@@ -1,5 +1,6 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -9,7 +10,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 
-public class aboutActivity extends ActionBarActivity {
+public class aboutActivity extends Activity {
 
     private TextView tv;
 

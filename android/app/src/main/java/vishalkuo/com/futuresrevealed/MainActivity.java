@@ -1,5 +1,6 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -35,7 +36,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private ImageView mainLogo;
     private ImageButton about;

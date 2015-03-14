@@ -1,5 +1,6 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -14,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class surveyActivity extends ActionBarActivity {
+public class surveyActivity extends Activity {
     private ListView listView;
     private ProgressBar spinner;
     private Context c = this;

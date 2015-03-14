@@ -1,5 +1,6 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -15,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class contactActivity extends ActionBarActivity {
+public class contactActivity extends Activity {
     private ImageButton facebook;
     private ImageButton twitter;
     private ImageButton linkedin;
