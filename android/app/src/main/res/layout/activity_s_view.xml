@@ -7,34 +7,30 @@
     tools:context="vishalkuo.com.futuresrevealed.surveyActivity"
     android:background="@drawable/bg">
 
-
-
-    <ListView
-        android:visibility="invisible"
-        android:id = "@+id/SurveyList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
     <TextView
         style="@style/Button"
         android:textColor="#000000"
-        android:textSize="14dp"
-        android:id = "@+id/nothingfound"
+        android:textSize="30dp"
+        android:id = "@+id/nameView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text = "placeholder"/>
 
-
-    <LinearLayout
+    <TextView
+        style = "@style/Button"
+        android:id = "@+id/descriptionView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:text = "description placeholder"
+        android:layout_below="@id/nameView"/>
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleLarge"
-        android:id = "@+id/progBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    </LinearLayout>
-
-
+    <TextView
+        style = "@style/Button"
+        android:id = "@+id/websiteview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionView"
+        android:text = "website"
+        />
 
 </RelativeLayout>

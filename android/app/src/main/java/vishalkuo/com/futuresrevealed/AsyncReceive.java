@@ -103,9 +103,13 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view,
                                                 int position, long id) {
-                            String intSite = resList.get(position).get("website");
-                            Intent i = new Intent(Intent.ACTION_VIEW);
-                            i.setData(Uri.parse(intSite));
+                            String lname = resList.get(position).get("name");
+                            String ldescrip = resList.get(position).get("description");
+                            String link = resList.get(position).get("website");
+                            Intent i = new Intent(c, sView.class);
+                            i.putExtra("name", lname);
+                            i.putExtra("description", ldescrip);
+                            i.putExtra("website", link);
                             c.startActivity(i);
                         }
                     });
