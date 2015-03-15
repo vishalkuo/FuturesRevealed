@@ -1,6 +1,8 @@
 package vishalkuo.com.futuresrevealed;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -8,6 +10,9 @@ import android.text.method.LinkMovementMethod;
 import android.text.method.MovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -18,7 +23,7 @@ public class sView extends Activity {
 
     private TextView nameView;
     private TextView descripView;
-    private TextView linkView;
+    private Button linkButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +40,22 @@ public class sView extends Activity {
 
         nameView = (TextView)findViewById(R.id.nameView);
         descripView = (TextView)findViewById(R.id.descriptionView);
-        linkView = (TextView)findViewById(R.id.websiteview);
+        linkButton = (Button)findViewById(R.id.websiteview);
 
         nameView.setText(name);
         descripView.setText(description);
 
-        String resultantText = "Press " +
-                "<a href = \"" + website + "\">here</a> to open the survey in your browser.";
-        linkView.setText(Html.fromHtml(resultantText));
-        linkView.setMovementMethod(LinkMovementMethod.getInstance());
+        linkButton.setText("Open in browser");
+        linkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(website));
+                startActivity(i);
+            }
+        });
+
+
     }
 
 
