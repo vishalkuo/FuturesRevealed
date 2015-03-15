@@ -14,6 +14,9 @@
 		E5789F5A1AB3819500EAFEBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5789F591AB3819500EAFEBD /* Images.xcassets */; };
 		E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */; };
 		E5789F691AB3819500EAFEBD /* Futures_RevealedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F681AB3819500EAFEBD /* Futures_RevealedTests.m */; };
+		E58E10E91AB646A80093E83E /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E10E81AB646A80093E83E /* BackgroundLayer.m */; };
+		E58E10EB1AB647C70093E83E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EA1AB647C70093E83E /* QuartzCore.framework */; };
+		E58E10ED1AB647D80093E83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EC1AB647D80093E83E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		E5789F621AB3819500EAFEBD /* Futures RevealedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Futures RevealedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789F671AB3819500EAFEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5789F681AB3819500EAFEBD /* Futures_RevealedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Futures_RevealedTests.m; sourceTree = "<group>"; };
+		E58E10E71AB646A80093E83E /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
+		E58E10E81AB646A80093E83E /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
+		E58E10EA1AB647C70093E83E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E58E10EC1AB647D80093E83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58E10ED1AB647D80093E83E /* UIKit.framework in Frameworks */,
+				E58E10EB1AB647C70093E83E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		E5789F401AB3819500EAFEBD = {
 			isa = PBXGroup;
 			children = (
+				E58E10EC1AB647D80093E83E /* UIKit.framework */,
+				E58E10EA1AB647C70093E83E /* QuartzCore.framework */,
 				E5789F4B1AB3819500EAFEBD /* Futures Revealed */,
 				E5789F651AB3819500EAFEBD /* Futures RevealedTests */,
 				E5789F4A1AB3819500EAFEBD /* Products */,
@@ -86,6 +97,8 @@
 				E5789F531AB3819500EAFEBD /* ViewController.h */,
 				E5789F541AB3819500EAFEBD /* ViewController.m */,
 				E5789F561AB3819500EAFEBD /* Main.storyboard */,
+				E58E10E71AB646A80093E83E /* BackgroundLayer.h */,
+				E58E10E81AB646A80093E83E /* BackgroundLayer.m */,
 				E5789F591AB3819500EAFEBD /* Images.xcassets */,
 				E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */,
 				E5789F4C1AB3819500EAFEBD /* Supporting Files */,
@@ -168,6 +181,7 @@
 				TargetAttributes = {
 					E5789F481AB3819500EAFEBD = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = XS8JG7ZC77;
 					};
 					E5789F611AB3819500EAFEBD = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -220,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5789F551AB3819500EAFEBD /* ViewController.m in Sources */,
+				E58E10E91AB646A80093E83E /* BackgroundLayer.m in Sources */,
 				E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */,
 				E5789F4F1AB3819500EAFEBD /* main.m in Sources */,
 			);
@@ -344,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Futures Revealed/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Futures Revealed/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +429,7 @@
 				E5789F6E1AB3819500EAFEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5789F6F1AB3819500EAFEBD /* Build configuration list for PBXNativeTarget "Futures RevealedTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +438,7 @@
 				E5789F711AB3819500EAFEBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
