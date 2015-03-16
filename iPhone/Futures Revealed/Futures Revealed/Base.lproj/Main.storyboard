@@ -13,13 +13,81 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="tintColor" red="0.74509803919999995" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multi-coloured logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-tp-GGI">
+                                <rect key="frame" x="216" y="78" width="169" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="goN-c8-Ql1"/>
+                                    <constraint firstAttribute="height" constant="192" id="z92-Ir-f5j"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vi-XG-saA">
+                                <rect key="frame" x="216" y="348" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="LRy-Wn-QRq"/>
+                                    <constraint firstAttribute="height" constant="30" id="c0W-gY-kIA"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrS-KE-T2F">
+                                <rect key="frame" x="339" y="348" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRF-ap-3zS">
+                                <rect key="frame" x="216" y="444" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8M-f9-PKy">
+                                <rect key="frame" x="339" y="444" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="l7c-tp-GGI" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="3zD-7i-CZS"/>
+                            <constraint firstItem="2vi-XG-saA" firstAttribute="top" secondItem="l7c-tp-GGI" secondAttribute="bottom" constant="78" id="4Mh-C9-Tt4"/>
+                            <constraint firstItem="aRF-ap-3zS" firstAttribute="top" secondItem="2vi-XG-saA" secondAttribute="bottom" constant="66" id="8zi-uS-Z5u"/>
+                            <constraint firstItem="l7c-tp-GGI" firstAttribute="leading" secondItem="2vi-XG-saA" secondAttribute="leading" id="AEP-tI-TVx"/>
+                            <constraint firstItem="2vi-XG-saA" firstAttribute="leading" secondItem="aRF-ap-3zS" secondAttribute="leading" id="SnS-Mv-Uwk"/>
+                            <constraint firstItem="2vi-XG-saA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="202" id="Ut1-BT-6rg"/>
+                            <constraint firstItem="KrS-KE-T2F" firstAttribute="leading" secondItem="W8M-f9-PKy" secondAttribute="leading" id="YkD-ox-SZl"/>
+                            <constraint firstItem="W8M-f9-PKy" firstAttribute="top" secondItem="KrS-KE-T2F" secondAttribute="bottom" constant="66" id="cOK-LF-tdR"/>
+                            <constraint firstItem="l7c-tp-GGI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="78" id="duw-ir-GiU"/>
+                            <constraint firstItem="l7c-tp-GGI" firstAttribute="trailing" secondItem="KrS-KE-T2F" secondAttribute="trailing" id="enN-cb-okX"/>
+                            <constraint firstItem="2vi-XG-saA" firstAttribute="baseline" secondItem="KrS-KE-T2F" secondAttribute="baseline" id="gwk-Io-mfi"/>
+                            <constraint firstAttribute="trailing" secondItem="KrS-KE-T2F" secondAttribute="trailing" constant="188" id="tsp-AR-Ag9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ut1-BT-6rg"/>
+                                <exclude reference="tsp-AR-Ag9"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="439.5" y="371.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Multi-coloured logo.png" width="500" height="472"/>
+    </resources>
 </document>

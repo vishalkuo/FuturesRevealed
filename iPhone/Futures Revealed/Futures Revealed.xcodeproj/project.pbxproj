@@ -17,6 +17,8 @@
 		E58E10E91AB646A80093E83E /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E10E81AB646A80093E83E /* BackgroundLayer.m */; };
 		E58E10EB1AB647C70093E83E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EA1AB647C70093E83E /* QuartzCore.framework */; };
 		E58E10ED1AB647D80093E83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EC1AB647D80093E83E /* UIKit.framework */; };
+		E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */; };
+		E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10F11AB658E00093E83E /* Multi-coloured logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E58E10E81AB646A80093E83E /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
 		E58E10EA1AB647C70093E83E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E58E10EC1AB647D80093E83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo copy.png"; sourceTree = "<group>"; };
+		E58E10F11AB658E00093E83E /* Multi-coloured logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		E5789F401AB3819500EAFEBD = {
 			isa = PBXGroup;
 			children = (
+				E58E10EE1AB658A50093E83E /* Images */,
 				E58E10EC1AB647D80093E83E /* UIKit.framework */,
 				E58E10EA1AB647C70093E83E /* QuartzCore.framework */,
 				E5789F4B1AB3819500EAFEBD /* Futures Revealed */,
@@ -130,6 +135,15 @@
 				E5789F671AB3819500EAFEBD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E58E10EE1AB658A50093E83E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
+				E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +227,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */,
 				E5789F581AB3819500EAFEBD /* Main.storyboard in Resources */,
+				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
 				E5789F5A1AB3819500EAFEBD /* Images.xcassets in Resources */,
 			);
