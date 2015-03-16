@@ -13,6 +13,7 @@
 @interface BackgroundLayer : NSObject
 
 +(CAGradientLayer*)blueGrad;
++(CALayer*)btnLayer;
 
 
 @end
