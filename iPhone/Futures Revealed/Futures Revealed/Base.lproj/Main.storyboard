@@ -29,31 +29,43 @@
                                     <constraint firstAttribute="width" constant="46" id="LRy-Wn-QRq"/>
                                     <constraint firstAttribute="height" constant="30" id="c0W-gY-kIA"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="About">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="abtClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CVF-Zd-dK9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrS-KE-T2F">
-                                <rect key="frame" x="339" y="348" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="330" y="348" width="55" height="30"/>
+                                <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FKd-Fg-WNF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRF-ap-3zS">
-                                <rect key="frame" x="216" y="444" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="216" y="444" width="55" height="30"/>
+                                <state key="normal" title="Contact">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="contactClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YWK-N3-hXL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8M-f9-PKy">
-                                <rect key="frame" x="339" y="444" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="330" y="444" width="55" height="30"/>
+                                <state key="normal" title="Surveys">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="surveysClick" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZHR-Gg-dGV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,6 +93,11 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="aboutBtn" destination="kh9-bI-dsS" id="CpC-np-rwM"/>
+                        <outlet property="contactBtn" destination="aRF-ap-3zS" id="3gP-Pk-bGu"/>
+                        <outlet property="surveyBtn" destination="W8M-f9-PKy" id="CIb-iU-nM1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

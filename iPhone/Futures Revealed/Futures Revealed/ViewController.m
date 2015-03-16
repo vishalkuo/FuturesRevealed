@@ -10,6 +10,7 @@
 #import "BackgroundLayer.h"
 @interface ViewController ()
 
+
 @end
 
 @implementation ViewController
@@ -21,11 +22,31 @@
     CAGradientLayer *bgLayer = [BackgroundLayer blueGrad];
     bgLayer.frame = self.view.bounds;
     [self.view.layer insertSublayer:bgLayer atIndex:0];
+    
+
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)abtClick{
+    NSLog(@"About clicked!");
+}
+
+-(IBAction)signClick{
+    NSLog(@"Sign up clicked!");
+}
+
+-(IBAction)contactClick{
+    NSLog(@"Contact clicked!");
+}
+
+-(IBAction)surveysClick{
+    NSLog(@"Surveys clicked!");
 }
 
 @end
