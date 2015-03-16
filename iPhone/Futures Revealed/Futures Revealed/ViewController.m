@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "BackgroundLayer.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CAGradientLayer *bgLayer = [BackgroundLayer blueGrad];
+    bgLayer.frame = self.view.bounds;
+    [self.view.layer insertSublayer:bgLayer atIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
