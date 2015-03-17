@@ -34,9 +34,12 @@
     for (UIButton *btn in btns){
         CAGradientLayer *btnGradient = [CAGradientLayer layer];
         btnGradient.frame = btn.bounds;
-        btnGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:102.0f / 255.0f green:102.0f / 255.0f blue:102.0f / 255.0f alpha:1.0]CGColor],(id)[[UIColor colorWithRed:51.0f / 255.0f green:51.0f / 255.0f blue:51.0f / 255.0f alpha:1.0]CGColor],nil];
+        btnGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:52.0f / 255.0f green:78.0f / 255.0f blue:243.0f / 255.0f alpha:0.8]CGColor],(id)[[UIColor colorWithRed:52.0f / 255.0f green:78.0f / 255.0f blue:243.0f / 255.0f alpha:1.0]CGColor],nil];
         
         [btn.layer insertSublayer:btnGradient atIndex:0];
+        
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
         
         
         CALayer *btnLayer = [btn layer];
