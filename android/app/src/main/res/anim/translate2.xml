@@ -9,15 +9,15 @@
         android:duration="650"
         android:fromXDelta="0"
         android:fromYDelta="0"
-        android:toXDelta="-20%p"
-        android:toYDelta = "-15%p"
+        android:toXDelta="-19%p"
+        android:toYDelta = "-18%p"
         />
 
     <alpha
         android:startOffset="1800"
         android:fromAlpha="0.0"
         android:toAlpha="1.0"
-        android:duration="500"
+        android:duration="800"
         android:fillAfter="false"
         />
 

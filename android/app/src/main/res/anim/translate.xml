@@ -10,7 +10,7 @@
         android:fromXDelta="0"
         android:fromYDelta="0"
         android:toXDelta="0"
-        android:toYDelta = "-15%p"
+        android:toYDelta = "-18%p"
         />
 
     <translate
@@ -18,7 +18,7 @@
         android:duration="650"
         android:fromXDelta="0"
         android:fromYDelta="0"
-        android:toXDelta="-40%p"
+        android:toXDelta="-37%p"
         android:toYDelta = "0"
         />
 
