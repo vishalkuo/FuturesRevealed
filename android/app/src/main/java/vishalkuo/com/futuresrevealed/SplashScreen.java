@@ -9,12 +9,15 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 
 public class SplashScreen extends Activity {
-    TextView openF;
+    private TextView openF;
+    private TextView part2;
+    private TextView part3;
     private static int _timeOut = 2000;
 
     @Override
@@ -25,12 +28,24 @@ public class SplashScreen extends Activity {
 
         openF = (TextView)findViewById(R.id.openingF);
         Typeface thinFont = Typeface.createFromAsset(getAssets(), "Roboto-Thin.ttf");
+        Typeface thickFont = Typeface.createFromAsset(getAssets(), "Roboto-Regular.ttf");
         openF.setTypeface(thinFont);
 
-        final Animation anim = AnimationUtils.loadAnimation(this, R.anim.translate);
-        openF.startAnimation(anim);
+        part2 = (TextView)findViewById(R.id.pt2);
+        part2.setTypeface(thinFont);
+        part3 = (TextView)findViewById(R.id.pt3);
+        part3.setTypeface(thickFont);
 
-        anim.setAnimationListener(new Animation.AnimationListener() {
+        Animation scale = AnimationUtils.loadAnimation(this, R.anim.translate);
+        Animation scale2 = AnimationUtils.loadAnimation(this, R.anim.translate2);
+        Animation scale3 = AnimationUtils.loadAnimation(this, R.anim.translate3);
+
+
+
+        openF.startAnimation(scale);
+        part2.startAnimation(scale2);
+        part3.startAnimation(scale3);
+        scale.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
 
