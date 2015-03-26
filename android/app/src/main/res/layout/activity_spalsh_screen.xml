@@ -47,19 +47,20 @@
             />
         <Button
             android:id="@+id/surveys"
-
+            android:elevation="5dp"
             android:text="Surveys"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:layout_centerInParent="true"
             android:layout_width="190dp"
             android:layout_height="45dp"
-            android:background="@drawable/btn"
+            android:background="@drawable/btnselect"
             android:layout_marginTop="25dp"
             android:layout_below="@id/openingF"
             />
         <Button
             android:id="@+id/eList"
+            android:elevation="5dp"
             android:layout_margin="18dp"
             android:text="Email List"
             android:textColor="#FFFFFF"
@@ -67,18 +68,19 @@
             android:layout_centerInParent="true"
             android:layout_width="190dp"
             android:layout_height="45dp"
-            android:background="@drawable/btn"
+            android:background="@drawable/btnselect"
             android:layout_below="@id/surveys"
             />
         <Button
             android:id="@+id/learnMore"
+            android:elevation="5dp"
             android:text="Learn More"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
             android:layout_centerInParent="true"
             android:layout_width="190dp"
             android:layout_height="45dp"
-            android:background="@drawable/btn"
+            android:background="@drawable/btnselect"
             android:layout_below="@id/eList"
             />
 

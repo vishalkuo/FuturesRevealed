@@ -14,4 +14,5 @@
     &#8226; To improve the environment that we enter in one way or another, always striving for tangible change.</string>
     <string name="title_activity_s_view">Survey</string>
     <string name="title_activity_spalsh_screen">spalshScreen</string>
+    <string name="title_activity_card">cardActivity</string>
 </resources>

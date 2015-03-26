@@ -67,7 +67,7 @@ public class SplashScreen extends Activity {
         learnMore.startAnimation(btn1);
 
 
-        scale.setAnimationListener(new Animation.AnimationListener() {
+        /*scale.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
 
@@ -75,7 +75,7 @@ public class SplashScreen extends Activity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                /*new Handler().postDelayed(new Runnable(){
+                new Handler().postDelayed(new Runnable(){
 
                     @Override
                     public void run() {
@@ -84,7 +84,7 @@ public class SplashScreen extends Activity {
 
                         finish();
                     }
-                }, _timeOut);*/
+                }, _timeOut);
 
             }
 
@@ -92,7 +92,7 @@ public class SplashScreen extends Activity {
             public void onAnimationRepeat(Animation animation) {
 
             }
-        });
+        });*/
 
         survey.setOnClickListener(new View.OnClickListener() {
             @Override
