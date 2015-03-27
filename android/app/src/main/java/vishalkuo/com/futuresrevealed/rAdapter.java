@@ -33,9 +33,7 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.ContactViewHolder> {
     public void onBindViewHolder(ContactViewHolder contactViewHolder, int i) {
         rInfo ci = contactList.get(i);
         contactViewHolder.vName.setText(ci.name);
-        contactViewHolder.vSurname.setText(ci.surname);
-        contactViewHolder.vEmail.setText(ci.email);
-        contactViewHolder.vTitle.setText(ci.name + " " + ci.surname);
+        contactViewHolder.vTitle.setText(ci.name);
     }
 
     @Override
@@ -50,8 +48,6 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.ContactViewHolder> {
     public static class ContactViewHolder extends RecyclerView.ViewHolder {
 
         private TextView vName;
-        private TextView vSurname;
-        private TextView vEmail;
         private TextView vTitle;
         private Typeface thickFont = Typeface.createFromAsset(c.getAssets(), "Roboto-Regular.ttf");
 
@@ -60,12 +56,9 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.ContactViewHolder> {
         public ContactViewHolder(View v) {
             super(v);
             vName =  (TextView) v.findViewById(R.id.txtName);
-            vSurname = (TextView)  v.findViewById(R.id.txtSurname);
-            vEmail = (TextView)  v.findViewById(R.id.txtEmail);
+
             vTitle = (TextView) v.findViewById(R.id.title);
             vName.setTypeface(thickFont);
-            vSurname.setTypeface(thickFont);
-            vEmail.setTypeface(thickFont);
             vTitle.setTypeface(thickFont);
         }
     }

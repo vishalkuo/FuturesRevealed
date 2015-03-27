@@ -16,13 +16,13 @@
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="45dp"
             android:background="@color/fvBlue"
             android:text="contact det"
             android:gravity="center_vertical"
             android:textColor="@android:color/white"
-            android:paddingLeft="15dp"
-            android:textSize="17dp"/>
+            android:paddingLeft="30dp"
+            android:textSize="20dp"/>
 
         <TextView
             android:id="@+id/txtName"
@@ -30,43 +30,25 @@
             android:layout_height="wrap_content"
             android:text="Name"
             android:gravity="center_vertical"
-            android:textSize="10dp"
+            android:textSize="14dp"
+            android:paddingLeft="25dp"
             android:layout_below="@id/title"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:layout_marginLeft="5dp"/>
 
         <TextView
             android:id="@+id/txtSurname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Surname"
+            android:text="Tap to open in browser"
             android:gravity="center_vertical"
-            android:textSize="10dp"
+            android:textSize="14dp"
+            android:paddingLeft="25dp"
             android:layout_below="@id/txtName"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginBottom="15dp"
             />
-
-        <TextView
-            android:id="@+id/txtEmail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            android:textSize="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="150dp"
-            android:layout_alignBaseline="@id/txtName"/>
-
-        <TextView
-            android:id="@+id/txtAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Address"
-            android:textSize="10dp"
-            android:layout_alignStart="@id/txtEmail"
-            android:layout_alignBaseline="@id/txtSurname"/>
-
     </RelativeLayout>
 
 
