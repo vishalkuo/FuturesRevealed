@@ -26,7 +26,7 @@ public class recyclerView extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recList.setLayoutManager(llm);
 
-        rAdapter ca = new rAdapter(createList(30));
+        rAdapter ca = new rAdapter(createList(30), this);
         recList.setAdapter(ca);
     }
 

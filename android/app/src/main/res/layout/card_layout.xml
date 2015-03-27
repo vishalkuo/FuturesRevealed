@@ -5,7 +5,8 @@
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    card_view:cardCornerRadius="4dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="5dp"
     android:layout_margin="5dp">
 
     <RelativeLayout
@@ -15,12 +16,13 @@
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@color/bkg_card"
+            android:layout_height="40dp"
+            android:background="@color/fvBlue"
             android:text="contact det"
             android:gravity="center_vertical"
             android:textColor="@android:color/white"
-            android:textSize="14dp"/>
+            android:paddingLeft="15dp"
+            android:textSize="17dp"/>
 
         <TextView
             android:id="@+id/txtName"

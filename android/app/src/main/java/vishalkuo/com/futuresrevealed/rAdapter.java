@@ -1,5 +1,7 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.content.Context;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +16,11 @@ import java.util.List;
 public class rAdapter extends RecyclerView.Adapter<rAdapter.ContactViewHolder> {
 
     private List<rInfo> contactList;
+    private static Context c;
 
-    public rAdapter(List<rInfo> contactList) {
+    public rAdapter(List<rInfo> contactList, Context c) {
         this.contactList = contactList;
+        this.c = c;
     }
 
 
@@ -45,10 +49,13 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.ContactViewHolder> {
 
     public static class ContactViewHolder extends RecyclerView.ViewHolder {
 
-        protected TextView vName;
-        protected TextView vSurname;
-        protected TextView vEmail;
-        protected TextView vTitle;
+        private TextView vName;
+        private TextView vSurname;
+        private TextView vEmail;
+        private TextView vTitle;
+        private Typeface thickFont = Typeface.createFromAsset(c.getAssets(), "Roboto-Regular.ttf");
+
+
 
         public ContactViewHolder(View v) {
             super(v);
@@ -56,6 +63,10 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.ContactViewHolder> {
             vSurname = (TextView)  v.findViewById(R.id.txtSurname);
             vEmail = (TextView)  v.findViewById(R.id.txtEmail);
             vTitle = (TextView) v.findViewById(R.id.title);
+            vName.setTypeface(thickFont);
+            vSurname.setTypeface(thickFont);
+            vEmail.setTypeface(thickFont);
+            vTitle.setTypeface(thickFont);
         }
     }
 }
