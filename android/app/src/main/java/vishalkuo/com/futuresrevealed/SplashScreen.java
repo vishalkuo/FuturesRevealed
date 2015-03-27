@@ -97,7 +97,7 @@ public class SplashScreen extends Activity {
         survey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), surveyActivity.class);
+                Intent i = new Intent(view.getContext(), recyclerView.class);
                 startActivity(i);
             }
         });

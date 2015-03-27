@@ -46,8 +46,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".cardActivity"
-            android:label="@string/title_activity_card" >
+            android:name=".recycleView"
+            android:label="@string/title_activity_recycle_view" >
+        </activity>
+        <activity
+            android:name=".recyclerView"
+            android:label="@string/title_activity_recycler_view" >
         </activity>
     </application>
 
