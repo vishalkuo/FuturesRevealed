@@ -149,12 +149,16 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
             HttpGet httpPost = new HttpGet(postUrl);
 
             HttpResponse response = client.execute(httpPost);
-            HttpEntity entity = response.getEntity();
+            if (response != null){
+                HttpEntity entity = response.getEntity();
+                in = entity.getContent();
+                status = 1;
+            }
+            else{
+                status = 0;
+                return jarr;
+            }
 
-
-            in = entity.getContent();
-
-            status = 1;
         }
         catch (IOException e){
             e.printStackTrace();

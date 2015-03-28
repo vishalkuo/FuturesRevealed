@@ -30,18 +30,18 @@
         <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-efd937826d7e2f4194a30a46bfe2877cfe2d6275.jar" />
     </item>
     <item
-        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-9675b12ef4a4d1c1895125168c0810d1fab8aa9f.jar" />
-    </item>
-    <item
         jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
         <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-adfddecda9de1cf6fdf838592054c6105bb0fa74.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-9675b12ef4a4d1c1895125168c0810d1fab8aa9f.jar" />
     </item>
 
 </items>

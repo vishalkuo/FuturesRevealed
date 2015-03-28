@@ -2,9 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyActivity">
+    tools:context=".MyActivity"
+    >
 
     <ImageView
+        android:id = "@+id/parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="center"
@@ -15,7 +17,9 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         android:gravity="center"
+        android:layout_alignBottom="@id/parent"
         android:id = "@+id/nothingfound"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
