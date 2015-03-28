@@ -17,4 +17,5 @@
     <string name="title_activity_card">cardActivity</string>
     <string name="title_activity_recycle_view">recycleView</string>
     <string name="title_activity_recycler_view">recyclerView</string>
+    <string name="title_activity_email_list_detail">EmailListDetail</string>
 </resources>

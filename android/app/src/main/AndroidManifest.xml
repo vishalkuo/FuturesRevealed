@@ -38,7 +38,7 @@
         </activity>
         <activity
             android:name=".SplashScreen"
-            android:label="@string/title_activity_spalsh_screen" >
+            android:label="Futures Revealed" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

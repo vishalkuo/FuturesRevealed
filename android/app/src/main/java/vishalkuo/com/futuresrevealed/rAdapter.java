@@ -52,9 +52,6 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.surveyViewHolder> {
         private TextView description;
         private TextView name;
         private TextView browser;
-        //private Typeface thinFont = Typeface.createFromAsset(c.getAssets(), "Roboto-Thin.ttf");
-        //private Typeface thickFont = Typeface.createFromAsset(c.getAssets(), "Roboto-Regular.ttf");
-
 
 
         public surveyViewHolder(View v) {

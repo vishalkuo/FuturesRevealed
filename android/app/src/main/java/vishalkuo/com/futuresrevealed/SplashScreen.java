@@ -50,6 +50,7 @@ public class SplashScreen extends Activity {
         eList = (Button)findViewById(R.id.eList);
         eList.setTypeface(thickFont);
         learnMore = (Button)findViewById(R.id.learnMore);
+        learnMore.setTypeface(thickFont);
 
         Animation scale = AnimationUtils.loadAnimation(this, R.anim.translate);
         Animation scale2 = AnimationUtils.loadAnimation(this, R.anim.translate2);
