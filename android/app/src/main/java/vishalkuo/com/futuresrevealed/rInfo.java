@@ -5,8 +5,6 @@ package vishalkuo.com.futuresrevealed;
  */
 public class rInfo {
     protected String name;
-    protected String surname;
+    protected String description;
 
-
-    protected static final String NAME_PREFIX = "Survey_";
 }

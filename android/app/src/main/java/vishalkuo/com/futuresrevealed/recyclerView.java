@@ -2,8 +2,6 @@ package vishalkuo.com.futuresrevealed;
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -71,7 +69,7 @@ public class recyclerView extends Activity {
         List<rInfo> result = new ArrayList<rInfo>();
         for (int i=1; i <= size; i++) {
             rInfo ci = new rInfo();
-            ci.name = rInfo.NAME_PREFIX + i;
+            ci.name =  String.valueOf(i);
             result.add(ci);
 
         }

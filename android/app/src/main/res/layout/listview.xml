@@ -12,6 +12,7 @@
         android:textStyle="bold"
         android:singleLine="true"
         />
+
     <TextView
         style = "@style/Button"
         android:id="@+id/description"
