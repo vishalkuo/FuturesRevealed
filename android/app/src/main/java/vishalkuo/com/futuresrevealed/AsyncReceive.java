@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.support.v7.widget.RecyclerView;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
@@ -28,6 +31,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by vishalkuo on 15-03-12.
@@ -36,33 +40,28 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
 
     private String result = "";
     private Context c;
-    private TextView name;
-    private TextView description;
-    private TextView website;
     private TextView nothingfound;
     private ProgressBar prog;
     private boolean validData = false;
     private int status = 0;
     private InputStream in;
+    private rAdapter ra;
     private JSONArray jarr = null;
-    private ListView listview;
+    private RecyclerView recyclerView;
     private final static String _NAME = "name";
     private final static String _DESCRIPTION = "description";
     private final static String _WEBSITE = "website";
     JSONArray res = null;
-    ArrayList<HashMap<String, String>> resList = new ArrayList<HashMap<String, String>>();
+    private List<rInfo> surveyData = new ArrayList<rInfo>();
 
 
-    public AsyncReceive(ProgressBar prog, Context c, ListView l,
-                        TextView n, TextView d,TextView w, TextView not){
+
+    public AsyncReceive(ProgressBar prog, Context c, RecyclerView r,TextView not, rAdapter ra){
         this.prog = prog;
         this.c = c;
-        this.listview = l;
-        this.name = n;
-        this.description = d;
-        this.website = w;
-        resList = new ArrayList<HashMap<String, String>>();
+        this.recyclerView = r;
         this.nothingfound = not;
+        this.ra = ra;
     }
 
     @Override
@@ -83,38 +82,44 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
                 }
                 for (int i = 0; i < res.length(); i++){
                     JSONObject j = res.getJSONObject(i);
+                    rInfo ri = new rInfo();
+                    ri.name = j.getString(_NAME);
+                    ri.description = j.getString(_DESCRIPTION);
+                    ri.website = j.getString("url");
 
-                    String _n = j.getString(_NAME);
-                    String _d = j.getString(_DESCRIPTION);
-                    String _w = j.getString("url");
+                    surveyData.add(ri);
+                    ra = new rAdapter(surveyData, c);
+                    recyclerView.setAdapter(ra);
+                    recyclerView.setVisibility(View.VISIBLE);
 
-                    HashMap<String, String> map = new HashMap<String, String>();
-                    map.put(_NAME, _n);
-                    map.put(_DESCRIPTION, _d);
-                    map.put(_WEBSITE, _w);
-
-                    resList.add(map);
-                    ListAdapter adapter = new SimpleAdapter(c, resList, R.layout.listview, new String[]{_NAME, _DESCRIPTION, _WEBSITE},
-                            new int[]{R.id.name, R.id.description, R.id.url});
-
-                    listview.setAdapter(adapter);
-
-                    listview.setOnItemClickListener(    new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view,
-                                                int position, long id) {
-                            String lname = resList.get(position).get("name");
-                            String ldescrip = resList.get(position).get("description");
-                            String link = resList.get(position).get("website");
-                            Intent i = new Intent(c, sView.class);
-                            i.putExtra("name", lname);
-                            i.putExtra("description", ldescrip);
-                            i.putExtra("website", link);
-                            c.startActivity(i);
+                    final GestureDetector _GDETECT = new GestureDetector(c, new GestureDetector.SimpleOnGestureListener(){
+                        @Override public boolean onSingleTapUp(MotionEvent e) {
+                            return true;
                         }
                     });
 
-                    listview.setVisibility(View.VISIBLE);
+                    recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+                        @Override
+                        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+                            View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+
+                            if (child != null && _GDETECT.onTouchEvent(e)){
+                                int i= recyclerView.getChildPosition(child);
+                                String url = surveyData.get(i).website;
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setData(Uri.parse(url));
+                                c.startActivity(intent);
+                                return true;
+                            };
+                            return false;
+                        }
+
+                        @Override
+                        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+
+                        }
+                    });
+
 
                 }
             }catch(JSONException e){
@@ -130,6 +135,8 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
     protected void onPreExecute() {
         super.onPreExecute();
         prog.setVisibility(View.VISIBLE);
+
+
     }
 
     @Override

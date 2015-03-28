@@ -6,5 +6,6 @@ package vishalkuo.com.futuresrevealed;
 public class rInfo {
     protected String name;
     protected String description;
+    protected String website;
 
 }

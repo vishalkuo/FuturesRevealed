@@ -43,7 +43,7 @@ public class surveyActivity extends Activity {
         website = (TextView)findViewById(R.id.url);
         nothingfound = (TextView)findViewById(R.id.nothingfound);
 
-        new AsyncReceive(spinner, c, listView, name, description, website, nothingfound).execute();
+        //new AsyncReceive(spinner, c, listView, name, description, website, nothingfound).execute();
 
         actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);

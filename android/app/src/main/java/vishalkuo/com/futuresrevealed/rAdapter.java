@@ -35,6 +35,7 @@ public class rAdapter extends RecyclerView.Adapter<rAdapter.surveyViewHolder> {
         rInfo ci = surveyList.get(i);
         //sHolder.description.setText(ci.name);
         sHolder.name.setText(ci.name);
+        sHolder.description.setText(ci.description);
     }
 
     @Override

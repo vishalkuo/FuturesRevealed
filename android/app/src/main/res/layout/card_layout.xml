@@ -14,13 +14,13 @@
         android:layout_height="match_parent">
 
         <TextView
+            style="@style/Divider"
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@color/fvBlue"
             android:text="Title"
             android:gravity="center_vertical"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:paddingLeft="30dp"
             android:textSize="20dp"/>
 
