@@ -2,6 +2,7 @@ package vishalkuo.com.futuresrevealed;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.OperationApplicationException;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
@@ -20,7 +21,12 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParamBean;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -29,6 +35,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -70,6 +77,9 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
         prog.setVisibility(View.GONE);
         if (status == 0){
             Toast.makeText(c, "Something went wrong!", Toast.LENGTH_SHORT).show();
+        }else if (status == 3){
+            nothingfound.setVisibility(View.VISIBLE);
+            nothingfound.setText("Unable to connect. Check your internet connection and try again.");
         }
         else{
             try{
@@ -144,9 +154,16 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
         try{
             String postUrl = "http://www.vishalkuo.com/phpGet.php";
 
+            HttpParams params = new BasicHttpParams();
 
-            HttpClient client = new DefaultHttpClient();
-            HttpGet httpPost = new HttpGet(postUrl);
+            int timeoutConnection = 3500;
+            HttpConnectionParams.setConnectionTimeout(params, timeoutConnection);
+            int soConnection = 5000;
+            HttpConnectionParams.setSoTimeout(params, soConnection);
+
+            HttpClient client = new DefaultHttpClient(params);
+            HttpPost httpPost = new HttpPost(postUrl);
+
 
             HttpResponse response = client.execute(httpPost);
             if (response != null){
@@ -162,7 +179,11 @@ public class AsyncReceive extends AsyncTask<String, String, JSONArray> {
         }
         catch (IOException e){
             e.printStackTrace();
+            status = 3;
+            return null;
+
         }
+
 
         try{
             BufferedReader reader = new BufferedReader(new InputStreamReader(in, "iso-8859-1"), 8);

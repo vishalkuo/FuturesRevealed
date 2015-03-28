@@ -3,6 +3,8 @@ package vishalkuo.com.futuresrevealed;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +16,7 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.net.NetworkInterface;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,9 +48,21 @@ public class recyclerView extends Activity {
         spinner = (ProgressBar)findViewById(R.id.spinner);
         spinner.setVisibility(View.GONE);
 
+        ConnectivityManager cm = (ConnectivityManager)c
+                .getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        boolean isConnected = activeNetwork != null && activeNetwork.isConnectedOrConnecting();
         recList.setLayoutManager(llm);
-        new AsyncReceive(spinner, c, recList, nothingfound, ra).execute();
-        //recList.setAdapter(ca);
+
+
+        if (isConnected){
+            new AsyncReceive(spinner, c, recList, nothingfound, ra).execute();
+        }else{
+            nothingfound.setVisibility(View.VISIBLE);
+            nothingfound.setText("No internet connection available");
+        }
+
+
 
         actionBar = getActionBar();
         actionBar.setHomeButtonEnabled(true);
