@@ -65,8 +65,10 @@ public class AsyncSend extends AsyncTask<String, String, String> {
             }
             catch (ClientProtocolException e) {
                 e.printStackTrace();
+                didGetSent = 0;
             } catch (IOException e) {
                 e.printStackTrace();
+                didGetSent = 0;
             }
             return null;
         }

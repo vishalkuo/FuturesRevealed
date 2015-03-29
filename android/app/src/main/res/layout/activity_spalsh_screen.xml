@@ -69,7 +69,7 @@
             android:textSize="20dp"
             android:layout_centerInParent="true"
             android:layout_width="190dp"
-            android:textAllCaps="false"
+            android:onClick="sendEmail"
             android:layout_height="45dp"
             android:background="@drawable/btnselect"
             android:layout_below="@id/surveys"

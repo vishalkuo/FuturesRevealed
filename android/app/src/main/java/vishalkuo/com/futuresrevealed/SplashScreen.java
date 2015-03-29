@@ -2,10 +2,15 @@ package vishalkuo.com.futuresrevealed;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -25,13 +31,16 @@ public class SplashScreen extends Activity {
     private Button survey;
     private Button eList;
     private Button learnMore;
-    private static int _timeOut = 2000;
+    private Context c;
+    private AlertDialog alertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spalsh_screen);
         getActionBar().hide();
+
+        c = this;
 
         openF = (TextView)findViewById(R.id.openingF);
         Typeface thinFont = Typeface.createFromAsset(getAssets(), "Roboto-Thin.ttf");
@@ -67,34 +76,6 @@ public class SplashScreen extends Activity {
         eList.startAnimation(btn1);
         learnMore.startAnimation(btn1);
 
-
-        /*scale.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                new Handler().postDelayed(new Runnable(){
-
-                    @Override
-                    public void run() {
-                        Intent i = new Intent(SplashScreen.this, MainActivity.class);
-                        startActivity(i);
-
-                        finish();
-                    }
-                }, _timeOut);
-
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-
-            }
-        });*/
-
         survey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,6 +84,36 @@ public class SplashScreen extends Activity {
             }
         });
 
+
+    }
+
+    public void sendEmail(View v){
+        LayoutInflater li = LayoutInflater.from(c);
+        View promptsView = li.inflate(R.layout.dialog, null);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(promptsView);
+
+        final EditText name = (EditText)promptsView.findViewById(R.id.nameInput);
+        final EditText email = (EditText)promptsView.findViewById(R.id.emailInput);
+        email.setInputType(InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS);
+        builder.setTitle("Sign up!");
+        builder.setMessage("Sign up to receive email updates for useful information and upcoming talks." +
+                "\nNote: Futures Revealed will never distribute your email. ");
+        builder
+                .setCancelable(false)
+                .setPositiveButton("Sign me up!", new DialogInterface.OnClickListener(){
+                    public void onClick(DialogInterface dialog, int id){
+                        new AsyncSend(c, name.getText().toString(), email.getText().toString()).execute();
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        alertDialog = builder.create();
+        alertDialog.show();
 
     }
 

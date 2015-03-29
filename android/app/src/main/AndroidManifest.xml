@@ -49,6 +49,10 @@
             android:name=".recyclerView"
             android:label="@string/title_activity_s_view" >
         </activity>
+        <activity
+            android:name=".learn_moreList"
+            android:label="@string/title_activity_learn_more_list" >
+        </activity>
     </application>
 
 </manifest>

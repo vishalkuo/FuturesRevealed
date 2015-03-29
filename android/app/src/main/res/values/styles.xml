@@ -3,7 +3,8 @@
 <!-- Generated with http://android-holo-colors.com -->
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="AppTheme" parent="@android:style/Theme.Material">
+
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
         <item name = "android:actionBarStyle">@style/MyActionBar</item>
 
     </style>
@@ -11,9 +12,8 @@
 
     <style name = "MyActionBar" parent = "@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
         <item name="android:background">#0096FF</item>
-        <item name = "android:fontFamily">Roboto-Thin</item>
-        <item name = "android:titleTextStyle">@style/ActionBarTextColor</item>
     </style>
+
 
     <style name="ActionBarTextColor" parent = "@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name = "android:textColor">#FFFFFF</item>
