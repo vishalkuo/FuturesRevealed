@@ -102,6 +102,7 @@
             android:background="@drawable/btnselect"
             android:layout_above="@id/openingF"
             android:visibility="gone"
+            android:enabled="false"
             />
         <Button
             android:id="@+id/Contact"
@@ -115,6 +116,7 @@
             android:background="@drawable/btnselect"
             android:layout_marginBottom="18dp"
             android:visibility="gone"
+            android:enabled="false"
             />
 
         <Button
@@ -129,6 +131,7 @@
             android:background="@drawable/btnselect"
             android:layout_below="@id/Contact"
             android:visibility="gone"
+            android:enabled="false"
             />
 
         <Button
@@ -141,8 +144,10 @@
             android:layout_centerInParent="true"
             android:layout_width="190dp"
             android:layout_height="45dp"
-            android:background="@drawable/btnselect"
+            android:background="@drawable/gobackselect"
             android:layout_below="@id/eList"
+            android:enabled="false"
+            android:onClick="goBack"
             />
 
 

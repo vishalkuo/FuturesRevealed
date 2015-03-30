@@ -142,14 +142,43 @@ public class SplashScreen extends Activity {
         learnMore.setEnabled(false);
 
         about.setVisibility(View.VISIBLE);
+        about.setEnabled(true);
         about.startAnimation(fadeIn);
         contact.setVisibility(View.VISIBLE);
+        contact.setEnabled(true);
         contact.startAnimation(fadeIn);
         website.setVisibility(View.VISIBLE);
+        website.setEnabled(true);
         website.startAnimation(fadeIn);
+        goBack.setEnabled(true);
 
 
     }
+
+    public void goBack(View v){
+        openF.startAnimation(fadeIn);
+        part2.startAnimation(fadeIn);
+        part3.startAnimation(fadeIn);
+        survey.startAnimation(fadeIn);
+        eList.startAnimation(fadeIn);
+        learnMore.startAnimation(fadeIn);
+        survey.setEnabled(true);
+        openF.setEnabled(true);
+        part2.setEnabled(true);
+        part3.setEnabled(true);
+        eList.setEnabled(true);
+        learnMore.setEnabled(true);
+
+        about.startAnimation(fadeOut);
+        contact.startAnimation(fadeOut);
+        website.startAnimation(fadeOut);
+        goBack.startAnimation(fadeOut);
+        about.setEnabled(false);
+        contact.setEnabled(false);
+        website.setEnabled(false);
+        goBack.setEnabled(false);
+    }
+
 
 
 

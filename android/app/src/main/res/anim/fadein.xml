@@ -8,7 +8,7 @@
         android:fromAlpha="0.0"
         android:toAlpha="1.0"
         android:duration="450"
-        android:fillAfter="false"
+        android:fillAfter="true"
         />
 
 
