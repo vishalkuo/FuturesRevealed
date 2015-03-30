@@ -38,9 +38,9 @@ public class surveyActivity extends Activity {
         spinner.setVisibility(View.GONE);
 
 
-        name = (TextView)findViewById(R.id.name);
+        //name = (TextView)findViewById(R.id.name);
         description = (TextView)findViewById(R.id.description);
-        website = (TextView)findViewById(R.id.url);
+        //website = (TextView)findViewById(R.id.url);
         nothingfound = (TextView)findViewById(R.id.nothingfound);
 
         //new AsyncReceive(spinner, c, listView, name, description, website, nothingfound).execute();

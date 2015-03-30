@@ -31,8 +31,14 @@ public class SplashScreen extends Activity {
     private Button survey;
     private Button eList;
     private Button learnMore;
+    private Button about;
+    private Button contact;
+    private Button website;
     private Context c;
     private AlertDialog alertDialog;
+    private Animation fadeOut;
+    private Animation fadeIn;
+    private Button goBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,22 +56,22 @@ public class SplashScreen extends Activity {
         part2 = (TextView)findViewById(R.id.pt2);
         part2.setTypeface(thinFont);
         part3 = (TextView)findViewById(R.id.pt3);
-        part3.setTypeface(thickFont);
 
         bg = (ImageView)findViewById(R.id.bg);
         survey = (Button)findViewById(R.id.surveys);
-        survey.setTypeface(thickFont);
 
         eList = (Button)findViewById(R.id.eList);
         eList.setTypeface(thickFont);
         learnMore = (Button)findViewById(R.id.learnMore);
-        learnMore.setTypeface(thickFont);
+
 
         Animation scale = AnimationUtils.loadAnimation(this, R.anim.translate);
         Animation scale2 = AnimationUtils.loadAnimation(this, R.anim.translate2);
         Animation scale3 = AnimationUtils.loadAnimation(this, R.anim.translate3);
         Animation alpha = AnimationUtils.loadAnimation(this, R.anim.fade);
         Animation btn1 = AnimationUtils.loadAnimation(this, R.anim.btn1);
+        fadeOut = AnimationUtils.loadAnimation(this, R.anim.fadeout);
+        fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein);
 
 
         openF.startAnimation(scale);
@@ -75,6 +81,11 @@ public class SplashScreen extends Activity {
         survey.startAnimation(btn1);
         eList.startAnimation(btn1);
         learnMore.startAnimation(btn1);
+
+        about = (Button)findViewById(R.id.About);
+        contact = (Button)findViewById(R.id.Contact);
+        website = (Button)findViewById(R.id.website);
+        goBack = (Button)findViewById(R.id.goBack);
 
         survey.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +127,31 @@ public class SplashScreen extends Activity {
         alertDialog.show();
 
     }
+
+    public void prepLearn(View v){
+        openF.startAnimation(fadeOut);
+        part2.startAnimation(fadeOut);
+        part3.startAnimation(fadeOut);
+        survey.startAnimation(fadeOut);
+        survey.setEnabled(false);
+        eList.startAnimation(fadeOut);
+        eList.setEnabled(false);
+        goBack.setVisibility(View.VISIBLE);
+        learnMore.startAnimation(fadeOut);
+        goBack.startAnimation(fadeIn);
+        learnMore.setEnabled(false);
+
+        about.setVisibility(View.VISIBLE);
+        about.startAnimation(fadeIn);
+        contact.setVisibility(View.VISIBLE);
+        contact.startAnimation(fadeIn);
+        website.setVisibility(View.VISIBLE);
+        website.startAnimation(fadeIn);
+
+
+    }
+
+
 
 
     @Override
