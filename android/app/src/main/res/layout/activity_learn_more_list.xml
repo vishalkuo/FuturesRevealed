@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
 
             android:text = "@string/lorum_ipsum"
-            android:textSize="30dp"/>
+            android:textSize="14dp"/>
 
     </LinearLayout>
 

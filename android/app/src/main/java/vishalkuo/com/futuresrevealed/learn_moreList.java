@@ -1,5 +1,6 @@
 package vishalkuo.com.futuresrevealed;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.ScrollView;
 public class learn_moreList extends Activity {
     private Drawable actionbarBG;
     private customScroll cs;
+    private ActionBar actionBar;
 
 
     @Override
@@ -37,6 +39,10 @@ public class learn_moreList extends Activity {
                 actionbarBG.setAlpha(newAlpha);
             }
         });
+
+        actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
     }
 
 
