@@ -96,6 +96,14 @@ public class SplashScreen extends Activity {
             }
         });
 
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), learn_moreList.class);
+                startActivity(i);
+            }
+        });
+
 
     }
 

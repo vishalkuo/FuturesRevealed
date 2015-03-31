@@ -1,12 +1,44 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="vishalkuo.com.futuresrevealed.learn_moreList">
+<?xml version = "1.0" encoding = "utf-8"?>
+<vishalkuo.com.futuresrevealed.customScroll
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id = "@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aboutbg"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grad"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text = "@string/lorum_ipsum"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+
+
+
+</vishalkuo.com.futuresrevealed.customScroll>
