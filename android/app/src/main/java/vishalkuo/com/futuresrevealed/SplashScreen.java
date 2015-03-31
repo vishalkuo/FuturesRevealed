@@ -10,6 +10,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -151,11 +152,13 @@ public class SplashScreen extends Activity {
         website.setEnabled(true);
         website.startAnimation(fadeIn);
         goBack.setEnabled(true);
+        goBack.setClickable(true);
 
 
     }
 
     public void goBack(View v){
+        learnMore.setEnabled(true);
         openF.startAnimation(fadeIn);
         part2.startAnimation(fadeIn);
         part3.startAnimation(fadeIn);
@@ -167,12 +170,14 @@ public class SplashScreen extends Activity {
         part2.setEnabled(true);
         part3.setEnabled(true);
         eList.setEnabled(true);
-        learnMore.setEnabled(true);
+
 
         about.startAnimation(fadeOut);
         contact.startAnimation(fadeOut);
         website.startAnimation(fadeOut);
         goBack.startAnimation(fadeOut);
+        goBack.setVisibility(View.GONE);
+        goBack.setClickable(false);
         about.setEnabled(false);
         contact.setEnabled(false);
         website.setEnabled(false);
