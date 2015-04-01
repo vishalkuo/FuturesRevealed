@@ -4,16 +4,20 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 
 public class learn_moreList extends Activity {
     private Drawable actionbarBG;
     private customScroll cs;
     private ActionBar actionBar;
+    private TextView tv;
 
 
     @Override
@@ -43,6 +47,10 @@ public class learn_moreList extends Activity {
         actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
+
+        tv = (TextView)findViewById(R.id.webText);
+        tv.setText(Html.fromHtml("Visit our <a href = \"http://www.futuresrevealed.ca\">website</a> for more information"));
+        tv.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
 
@@ -55,16 +63,15 @@ public class learn_moreList extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.action_settings:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

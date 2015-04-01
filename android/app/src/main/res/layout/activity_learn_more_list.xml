@@ -30,12 +30,56 @@
                 android:background="@drawable/grad"/>
         </FrameLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text = "About"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:textSize= "40dp"/>
 
-            android:text = "@string/lorum_ipsum"
-            android:textSize="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text = "@string/totalAbout"
+            android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Our Values"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/values"
+                android:paddingLeft="16dp"
+                android:textSize="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"/>
+
+
+         <TextView
+             android:id = "@+id/webText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text = "test"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp"
+             android:paddingBottom="16dp"
+             android:textSize="16dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
