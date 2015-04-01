@@ -143,6 +143,7 @@ public class SplashScreen extends Activity {
         part3.startAnimation(fadeOut);
         survey.startAnimation(fadeOut);
         survey.setEnabled(false);
+        survey.setClickable(false);
         eList.startAnimation(fadeOut);
         eList.setEnabled(false);
         goBack.setVisibility(View.VISIBLE);
@@ -159,6 +160,7 @@ public class SplashScreen extends Activity {
         website.setVisibility(View.VISIBLE);
         website.setEnabled(true);
         website.startAnimation(fadeIn);
+        website.setClickable(true);
         goBack.setEnabled(true);
         goBack.setClickable(true);
 
@@ -174,6 +176,7 @@ public class SplashScreen extends Activity {
         eList.startAnimation(fadeIn);
         learnMore.startAnimation(fadeIn);
         survey.setEnabled(true);
+        survey.setClickable(true);
         openF.setEnabled(true);
         part2.setEnabled(true);
         part3.setEnabled(true);
@@ -189,6 +192,7 @@ public class SplashScreen extends Activity {
         about.setEnabled(false);
         contact.setEnabled(false);
         website.setEnabled(false);
+        website.setClickable(false);
         goBack.setEnabled(false);
     }
 

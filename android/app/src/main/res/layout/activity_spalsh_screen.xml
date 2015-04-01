@@ -132,6 +132,7 @@
             android:layout_below="@id/Contact"
             android:visibility="gone"
             android:enabled="false"
+            android:clickable="false"
             />
 
         <Button
