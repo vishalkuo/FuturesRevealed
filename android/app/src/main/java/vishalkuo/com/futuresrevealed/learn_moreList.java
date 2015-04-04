@@ -2,6 +2,12 @@ package vishalkuo.com.futuresrevealed;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.LinearGradient;
+import android.graphics.Matrix;
+import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
@@ -24,6 +30,7 @@ public class learn_moreList extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn_more_list);
+
 
         actionbarBG = getResources().getDrawable(R.drawable.abar_bg);
         actionbarBG.setAlpha(0);
