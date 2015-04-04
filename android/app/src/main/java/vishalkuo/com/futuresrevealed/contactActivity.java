@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 
@@ -23,14 +25,38 @@ public class contactActivity extends Activity {
     private ImageButton linkedin;
     private Button email;
     private Button web;
-    private ImageView mainLogo;
+
     private ActionBar actionBar;
+    private Drawable actionbarBG;
+    private customScroll cs;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact2);
+
+
+        actionbarBG = getResources().getDrawable(R.drawable.abar_bg);
+        actionbarBG.setAlpha(0);
+
+        getActionBar().setBackgroundDrawable(actionbarBG);
+
+        cs = (customScroll)findViewById(R.id.cslearn);
+        cs.setOnScrollChangedListener(new customScroll.OnScrollChangedListener() {
+            @Override
+            public void onScrollChanged(ScrollView sv, int a, int b, int c, int d) {
+                final int headerHeight = findViewById(R.id.headimg).getHeight() - getActionBar().getHeight();
+                final float ratio = (float) Math.min(Math.max(b, 0), headerHeight) / headerHeight;
+                final int newAlpha = (int) (ratio * 255);
+                actionbarBG.setAlpha(newAlpha);
+            }
+        });
+
+        actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
+
 
         facebook = (ImageButton)findViewById(R.id.facebook);
 
@@ -83,17 +109,6 @@ public class contactActivity extends Activity {
                 startActivity(i);
             }
         });
-
-        mainLogo = (ImageView)findViewById(R.id.mainlogo);
-        mainLogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("http://www.futuresrevealed.ca"));
-                startActivity(i);
-            }
-        });
-
         actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);

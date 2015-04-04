@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.InputType;
@@ -104,6 +105,23 @@ public class SplashScreen extends Activity {
             }
         });
 
+        website.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("http://www.futuresrevealed.ca"));
+                startActivity(i);
+            }
+        });
+
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(view.getContext(), contactActivity.class);
+                startActivity(i);
+            }
+        });
+
 
     }
 
@@ -134,6 +152,8 @@ public class SplashScreen extends Activity {
                 });
         alertDialog = builder.create();
         alertDialog.show();
+
+
 
     }
 

@@ -24,6 +24,7 @@
         <activity
             android:name=".contactActivity"
             android:label="Contact"
+            android:theme= "@style/TranslucentActionBar.ActionBar.Overlay">
             android:screenOrientation="portrait" >
         </activity>
         <activity

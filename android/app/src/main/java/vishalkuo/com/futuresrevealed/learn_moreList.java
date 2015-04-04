@@ -31,9 +31,6 @@ public class learn_moreList extends Activity {
         getActionBar().setBackgroundDrawable(actionbarBG);
 
         cs = (customScroll)findViewById(R.id.cs);
-
-        Log.d("XH", String.valueOf(cs));
-
         cs.setOnScrollChangedListener(new customScroll.OnScrollChangedListener() {
             @Override
             public void onScrollChanged(ScrollView sv, int a, int b, int c, int d) {
