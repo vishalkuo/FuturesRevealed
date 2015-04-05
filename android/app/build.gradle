@@ -8,8 +8,9 @@ android {
         applicationId "vishalkuo.com.futuresrevealed"
         minSdkVersion 21
         targetSdkVersion 21
-        versionCode 15
-        versionName "3.4"
+        versionCode 16
+        versionName "3.41" +
+                ""
     }
     buildTypes {
         release {
