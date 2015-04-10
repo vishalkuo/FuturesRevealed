@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,95 +15,16 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multi-coloured logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="l7c-tp-GGI">
-                                <rect key="frame" x="215" y="58" width="169" height="192"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="169" id="P2m-Ne-62q"/>
-                                    <constraint firstAttribute="height" constant="192" id="ltb-M0-oJv"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vi-XG-saA">
-                                <rect key="frame" x="177" y="262" width="110" height="110"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="7ft-lC-PTl"/>
-                                    <constraint firstAttribute="height" constant="110" id="xZl-z5-Y7f"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="18"/>
-                                <state key="normal" title="About"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRF-ap-3zS">
-                                <rect key="frame" x="177" y="394" width="110" height="110"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="18"/>
-                                <state key="normal" title="Contact">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrS-KE-T2F">
-                                <rect key="frame" x="315" y="262" width="110" height="110"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="tintColor" red="0.058138723580000003" green="1" blue="0.1676933602" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="18"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8M-f9-PKy">
-                                <rect key="frame" x="315" y="394" width="110" height="110"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="pRg-XF-BTJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="18"/>
-                                <state key="normal" title="Surveys">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="l7c-tp-GGI" secondAttribute="centerX" id="3kX-nA-Rhe"/>
-                            <constraint firstItem="W8M-f9-PKy" firstAttribute="top" secondItem="2vi-XG-saA" secondAttribute="top" constant="132" id="92Q-5P-f17"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="top" secondItem="W8M-f9-PKy" secondAttribute="bottom" constant="-110" id="EkM-jR-Rca"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="top" secondItem="KrS-KE-T2F" secondAttribute="top" constant="132" id="F4h-aC-PjW"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="centerX" secondItem="W8M-f9-PKy" secondAttribute="centerX" constant="-138" id="GEC-eJ-I8D"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="leading" secondItem="KrS-KE-T2F" secondAttribute="trailing" constant="-248" id="Mcj-fC-cwI"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="baseline" secondItem="KrS-KE-T2F" secondAttribute="firstBaseline" constant="132" id="QWc-Dh-YIs"/>
-                            <constraint firstAttribute="centerY" secondItem="l7c-tp-GGI" secondAttribute="centerY" constant="146" id="QfM-Zm-ShJ"/>
-                            <constraint firstItem="KrS-KE-T2F" firstAttribute="centerX" secondItem="2vi-XG-saA" secondAttribute="centerX" constant="138" id="RSf-oQ-A6M"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="leading" secondItem="W8M-f9-PKy" secondAttribute="leading" constant="-138" id="ReJ-XE-DDF"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aRF-ap-3zS" secondAttribute="bottom" constant="96" id="a2I-LJ-3h8"/>
-                            <constraint firstItem="W8M-f9-PKy" firstAttribute="leading" secondItem="2vi-XG-saA" secondAttribute="trailing" constant="28" id="cUl-CG-beD"/>
-                            <constraint firstItem="aRF-ap-3zS" firstAttribute="firstBaseline" secondItem="KrS-KE-T2F" secondAttribute="baseline" constant="132" id="fwJ-Wp-Oc8"/>
-                            <constraint firstItem="l7c-tp-GGI" firstAttribute="leading" secondItem="2vi-XG-saA" secondAttribute="centerX" constant="-17" id="gnH-3u-Nu1"/>
-                            <constraint firstItem="W8M-f9-PKy" firstAttribute="firstBaseline" secondItem="2vi-XG-saA" secondAttribute="baseline" constant="132" id="ruG-Jy-082"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2vi-XG-saA" secondAttribute="bottom" constant="228" id="xOJ-4r-AcG"/>
-                            <constraint firstItem="W8M-f9-PKy" firstAttribute="baseline" secondItem="2vi-XG-saA" secondAttribute="firstBaseline" constant="132" id="yRR-qa-BaX"/>
-                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <connections>
-                        <outlet property="aboutBtn" destination="2vi-XG-saA" id="x2n-iv-Oi8"/>
-                        <outlet property="contactBtn" destination="aRF-ap-3zS" id="3gP-Pk-bGu"/>
-                        <outlet property="signUpBtn" destination="KrS-KE-T2F" id="2Dh-oH-hPc"/>
-                        <outlet property="surveyBtn" destination="W8M-f9-PKy" id="CIb-iU-nM1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="439" y="371"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Multi-coloured logo.png" width="500" height="472"/>
-    </resources>
 </document>

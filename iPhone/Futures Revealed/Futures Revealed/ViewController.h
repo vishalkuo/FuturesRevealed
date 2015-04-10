@@ -10,16 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *aboutBtn;
-@property (weak, nonatomic) IBOutlet UIButton *signUpBtn;
-@property (weak, nonatomic) IBOutlet UIButton *surveyBtn;
-@property (weak, nonatomic) IBOutlet UIButton *contactBtn;
-
-
--(IBAction)abtClick;
--(IBAction)signClick;
--(IBAction)contactClick;
--(IBAction)surveysClick;
 
 
 @end

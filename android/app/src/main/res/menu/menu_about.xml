@@ -4,6 +4,6 @@
     tools:context="vishalkuo.com.futuresrevealed.aboutActivity">
 
 
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    <item android:id="@+id/action_settings" android:title="@string/AboutTheDev"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
