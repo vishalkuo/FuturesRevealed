@@ -55,13 +55,13 @@ public class SplashScreen extends Activity {
         Typeface thickFont = Typeface.createFromAsset(getAssets(), "Roboto-Regular.ttf");
         openF.setTypeface(thinFont);
 
-        openF.setTextSize(33 * getResources().getDisplayMetrics().density);
+        //openF.setTextSize(33 * getResources().getDisplayMetrics().density);
 
         part2 = (TextView)findViewById(R.id.pt2);
         part2.setTypeface(thinFont);
-        part2.setTextSize(33 * getResources().getDisplayMetrics().density);
+        //part2.setTextSize(33 * getResources().getDisplayMetrics().density);
         part3 = (TextView)findViewById(R.id.pt3);
-        part3.setTextSize(33 * getResources().getDisplayMetrics().density);
+        //part3.setTextSize(33 * getResources().getDisplayMetrics().density);
 
         bg = (ImageView)findViewById(R.id.bg);
         survey = (Button)findViewById(R.id.surveys);
