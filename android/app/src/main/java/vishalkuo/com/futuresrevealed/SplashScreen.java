@@ -140,7 +140,7 @@ public class SplashScreen extends Activity {
                 "\nNote: Futures Revealed will never distribute your email. ");
         builder
                 .setCancelable(false)
-                .setPositiveButton("Sign me up!", new DialogInterface.OnClickListener(){
+                .setPositiveButton("OK", new DialogInterface.OnClickListener(){
                     public void onClick(DialogInterface dialog, int id){
                         new AsyncSend(c, name.getText().toString(), email.getText().toString()).execute();
                     }

@@ -14,11 +14,11 @@
 		E5789F5A1AB3819500EAFEBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5789F591AB3819500EAFEBD /* Images.xcassets */; };
 		E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */; };
 		E5789F691AB3819500EAFEBD /* Futures_RevealedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F681AB3819500EAFEBD /* Futures_RevealedTests.m */; };
-		E58E10E91AB646A80093E83E /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E10E81AB646A80093E83E /* BackgroundLayer.m */; };
 		E58E10EB1AB647C70093E83E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EA1AB647C70093E83E /* QuartzCore.framework */; };
 		E58E10ED1AB647D80093E83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EC1AB647D80093E83E /* UIKit.framework */; };
 		E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */; };
 		E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10F11AB658E00093E83E /* Multi-coloured logo.png */; };
+		E5AF53381B48C74B0055C686 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AF53371B48C74B0055C686 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,12 +45,11 @@
 		E5789F621AB3819500EAFEBD /* Futures RevealedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Futures RevealedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789F671AB3819500EAFEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5789F681AB3819500EAFEBD /* Futures_RevealedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Futures_RevealedTests.m; sourceTree = "<group>"; };
-		E58E10E71AB646A80093E83E /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
-		E58E10E81AB646A80093E83E /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
 		E58E10EA1AB647C70093E83E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E58E10EC1AB647D80093E83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo copy.png"; sourceTree = "<group>"; };
 		E58E10F11AB658E00093E83E /* Multi-coloured logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo.png"; sourceTree = "<group>"; };
+		E5AF53371B48C74B0055C686 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +101,6 @@
 				E5789F531AB3819500EAFEBD /* ViewController.h */,
 				E5789F541AB3819500EAFEBD /* ViewController.m */,
 				E5789F561AB3819500EAFEBD /* Main.storyboard */,
-				E58E10E71AB646A80093E83E /* BackgroundLayer.h */,
-				E58E10E81AB646A80093E83E /* BackgroundLayer.m */,
 				E5789F591AB3819500EAFEBD /* Images.xcassets */,
 				E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */,
 				E5789F4C1AB3819500EAFEBD /* Supporting Files */,
@@ -140,6 +137,7 @@
 		E58E10EE1AB658A50093E83E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E5AF53371B48C74B0055C686 /* bg.jpg */,
 				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
 				E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */,
 			);
@@ -231,6 +229,7 @@
 				E5789F581AB3819500EAFEBD /* Main.storyboard in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
+				E5AF53381B48C74B0055C686 /* bg.jpg in Resources */,
 				E5789F5A1AB3819500EAFEBD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +249,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5789F551AB3819500EAFEBD /* ViewController.m in Sources */,
-				E58E10E91AB646A80093E83E /* BackgroundLayer.m in Sources */,
 				E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */,
 				E5789F4F1AB3819500EAFEBD /* main.m in Sources */,
 			);
