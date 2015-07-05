@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property(weak, nonatomic)IBOutlet UIButton *surveyButton;
+@property(weak, nonatomic)IBOutlet UIButton *emailButton;
+@property(weak, nonatomic)IBOutlet UIButton *learnMoreButton;
+
 
 
 @end

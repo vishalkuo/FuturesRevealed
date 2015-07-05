@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,29 +23,143 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-X4-f56">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6t-GK-Xch">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Email List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="338" width="68" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVd-oY-mwy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Learn More">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="394" width="88" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuU-by-g7Q">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Surveys">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="172" y="285" width="57" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="9OH-GI-VgO" kind="show" id="J7c-IK-Q3J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="AyN-X4-f56" secondAttribute="bottom" constant="389" id="6tc-0J-4VT">
+                                <variation key="widthClass=compact" constant="414"/>
+                            </constraint>
+                            <constraint firstItem="AyN-X4-f56" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="XFy-t8-Wsx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AyN-X4-f56" secondAttribute="trailing" constant="11" id="Xfb-84-l2d"/>
+                            <constraint firstItem="AyN-X4-f56" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="eG4-Uw-2MG">
+                                <variation key="widthClass=compact" constant="38"/>
+                            </constraint>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="sTM-ji-JhX"/>
+                                <exclude reference="AyN-X4-f56"/>
+                                <exclude reference="o6t-GK-Xch"/>
+                                <exclude reference="VVd-oY-mwy"/>
+                                <exclude reference="VuU-by-g7Q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XFy-t8-Wsx"/>
+                                <exclude reference="Xfb-84-l2d"/>
+                                <exclude reference="eG4-Uw-2MG"/>
+                                <exclude reference="6tc-0J-4VT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="sTM-ji-JhX"/>
+                                <include reference="AyN-X4-f56"/>
+                                <include reference="o6t-GK-Xch"/>
+                                <include reference="VVd-oY-mwy"/>
+                                <include reference="VuU-by-g7Q"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XFy-t8-Wsx"/>
+                                <include reference="Xfb-84-l2d"/>
+                                <include reference="eG4-Uw-2MG"/>
+                                <include reference="6tc-0J-4VT"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="emailButton" destination="o6t-GK-Xch" id="gsE-vx-5Hv"/>
+                        <outlet property="learnMoreButton" destination="VVd-oY-mwy" id="YXK-tI-1be"/>
+                        <outlet property="surveyButton" destination="VuU-by-g7Q" id="S18-SG-FQH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439" y="371"/>
+            <point key="canvasLocation" x="438" y="371"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="ffi-up-TnN">
+            <objects>
+                <tableViewController id="kM0-b8-mKV" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="w8a-nD-J5R">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fUf-xO-mw6">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUf-xO-mw6" id="uci-ed-Ddd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kM0-b8-mKV" id="EIA-ej-nqf"/>
+                            <outlet property="delegate" destination="kM0-b8-mKV" id="cce-cD-5Kd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="1fR-K1-WOD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keC-UL-nzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1918.5" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BpA-2c-Iei">
+            <objects>
+                <navigationController id="9OH-GI-VgO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KrC-lA-xoT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kM0-b8-mKV" kind="relationship" relationship="rootViewController" id="fXn-0h-hnG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zei-tH-seK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141.5" y="371"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Title.png" width="500" height="200"/>
         <image name="bg.jpg" width="1080" height="1920"/>
     </resources>
 </document>
