@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -80,10 +81,10 @@
                                 <exclude reference="VuU-by-g7Q"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="6tc-0J-4VT"/>
                                 <exclude reference="XFy-t8-Wsx"/>
                                 <exclude reference="Xfb-84-l2d"/>
                                 <exclude reference="eG4-Uw-2MG"/>
-                                <exclude reference="6tc-0J-4VT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -95,10 +96,10 @@
                                 <include reference="VuU-by-g7Q"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="6tc-0J-4VT"/>
                                 <include reference="XFy-t8-Wsx"/>
                                 <include reference="Xfb-84-l2d"/>
                                 <include reference="eG4-Uw-2MG"/>
-                                <include reference="6tc-0J-4VT"/>
                             </mask>
                         </variation>
                     </view>
@@ -120,6 +121,7 @@
             <objects>
                 <tableViewController id="kM0-b8-mKV" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="w8a-nD-J5R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>

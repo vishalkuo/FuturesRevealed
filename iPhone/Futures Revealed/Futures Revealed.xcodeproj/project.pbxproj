@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51FDB6F1B49C70400313B37 /* SurveyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FDB6E1B49C70400313B37 /* SurveyObject.m */; };
 		E5789F4F1AB3819500EAFEBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F4E1AB3819500EAFEBD /* main.m */; };
 		E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F511AB3819500EAFEBD /* AppDelegate.m */; };
 		E5789F551AB3819500EAFEBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F541AB3819500EAFEBD /* ViewController.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E51FDB6D1B49C70400313B37 /* SurveyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyObject.h; sourceTree = "<group>"; };
+		E51FDB6E1B49C70400313B37 /* SurveyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyObject.m; sourceTree = "<group>"; };
 		E5789F491AB3819500EAFEBD /* Futures Revealed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Futures Revealed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789F4D1AB3819500EAFEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5789F4E1AB3819500EAFEBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 			children = (
 				E5789F501AB3819500EAFEBD /* AppDelegate.h */,
 				E5789F511AB3819500EAFEBD /* AppDelegate.m */,
+				E51FDB6D1B49C70400313B37 /* SurveyObject.h */,
+				E51FDB6E1B49C70400313B37 /* SurveyObject.m */,
 				E5F3BA071B4999DD009CC9E7 /* TableViewController.h */,
 				E5F3BA081B4999DD009CC9E7 /* TableViewController.m */,
 				E5789F531AB3819500EAFEBD /* ViewController.h */,
@@ -374,6 +379,7 @@
 				E5F3B9FA1B499399009CC9E7 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				E5F3B9F41B499399009CC9E7 /* AFSecurityPolicy.m in Sources */,
 				E5F3B9FF1B499399009CC9E7 /* UIRefreshControl+AFNetworking.m in Sources */,
+				E51FDB6F1B49C70400313B37 /* SurveyObject.m in Sources */,
 				E5F3BA001B499399009CC9E7 /* UIWebView+AFNetworking.m in Sources */,
 				E5F3B9F21B499399009CC9E7 /* AFHTTPSessionManager.m in Sources */,
 				E5F3B9FB1B499399009CC9E7 /* UIAlertView+AFNetworking.m in Sources */,
