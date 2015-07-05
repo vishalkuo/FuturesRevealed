@@ -12,11 +12,6 @@
         android:logo="@drawable/fvnowreath"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name=".aboutActivity"
             android:label="About"
             android:screenOrientation="portrait" >
@@ -25,16 +20,6 @@
             android:name=".contactActivity"
             android:label="Contact"
             android:theme= "@style/TranslucentActionBar.ActionBar.Overlay">
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".surveyActivity"
-            android:label="Surveys"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name=".sView"
-            android:label="@string/title_activity_s_view"
             android:screenOrientation="portrait" >
         </activity>
         <activity

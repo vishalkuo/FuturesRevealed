@@ -30,6 +30,20 @@
         <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-efd937826d7e2f4194a30a46bfe2877cfe2d6275.jar" />
     </item>
     <item
+        jar="/Users/vishalkuo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/gson-2.3.1-7ecb8f6a4ab7559940b6375459f1ae1d1e10e09d.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-0dcf7ed83cdcf422f4cd7ea1a8a2dd01ba802ffe.jar" />
+    </item>
+    <item
         jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
         jumboMode="false"
         revision="21.1.2"
