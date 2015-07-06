@@ -72,6 +72,9 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //NSLog([_surveyList[indexPath.row] description]);
+    
+    NSString *urlString = [_surveyList[indexPath.row] website];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 }
 
 -(void)loadSurveys{

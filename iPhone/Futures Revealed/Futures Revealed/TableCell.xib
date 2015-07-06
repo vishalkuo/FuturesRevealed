@@ -28,8 +28,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to open in browser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKS-ty-FN7">
+                                <rect key="frame" x="60" y="148" width="258" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WKS-ty-FN7" firstAttribute="top" secondItem="cqk-Q3-Whx" secondAttribute="top" constant="148" id="Br0-3K-xU2"/>
+                            <constraint firstItem="WKS-ty-FN7" firstAttribute="leading" secondItem="cqk-Q3-Whx" secondAttribute="leading" constant="60" id="DG0-sK-bh8"/>
+                            <constraint firstAttribute="trailing" secondItem="WKS-ty-FN7" secondAttribute="trailing" constant="60" id="M9e-GB-Vo3"/>
+                            <constraint firstAttribute="bottom" secondItem="WKS-ty-FN7" secondAttribute="bottom" constant="8" id="q0t-hr-WkN"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
