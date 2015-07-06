@@ -39,6 +39,9 @@
 		E5F3B9FF1B499399009CC9E7 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B9ED1B499399009CC9E7 /* UIRefreshControl+AFNetworking.m */; };
 		E5F3BA001B499399009CC9E7 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B9EF1B499399009CC9E7 /* UIWebView+AFNetworking.m */; };
 		E5F3BA091B4999DD009CC9E7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3BA081B4999DD009CC9E7 /* TableViewController.m */; };
+		E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */; };
+		E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5F9FB591B4A1163009BEB08 /* TableCell.xib */; };
+		E5F9FB5D1B4A11F0009BEB08 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F9FB5C1B4A11F0009BEB08 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,10 @@
 		E5F3B9EF1B499399009CC9E7 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E5F3BA071B4999DD009CC9E7 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
 		E5F3BA081B4999DD009CC9E7 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = "../Futures Revealed/creme_brelee.jpg"; sourceTree = "<group>"; };
+		E5F9FB591B4A1163009BEB08 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		E5F9FB5B1B4A11F0009BEB08 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		E5F9FB5C1B4A11F0009BEB08 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +175,9 @@
 				E5789F531AB3819500EAFEBD /* ViewController.h */,
 				E5789F541AB3819500EAFEBD /* ViewController.m */,
 				E5789F561AB3819500EAFEBD /* Main.storyboard */,
+				E5F9FB591B4A1163009BEB08 /* TableCell.xib */,
+				E5F9FB5B1B4A11F0009BEB08 /* TableViewCell.h */,
+				E5F9FB5C1B4A11F0009BEB08 /* TableViewCell.m */,
 				E5F3B9C81B499135009CC9E7 /* Title.png */,
 				E5789F591AB3819500EAFEBD /* Images.xcassets */,
 				E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */,
@@ -206,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				E5AF53371B48C74B0055C686 /* bg.jpg */,
+				E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */,
 				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
 				E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */,
 			);
@@ -344,8 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */,
+				E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */,
 				E5789F581AB3819500EAFEBD /* Main.storyboard in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
+				E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
 				E5AF53381B48C74B0055C686 /* bg.jpg in Resources */,
 				E5F3B9C91B499135009CC9E7 /* Title.png in Resources */,
@@ -370,6 +383,7 @@
 				E5F3B9F01B499399009CC9E7 /* AFHTTPRequestOperation.m in Sources */,
 				E5F3B9FD1B499399009CC9E7 /* UIImageView+AFNetworking.m in Sources */,
 				E5789F551AB3819500EAFEBD /* ViewController.m in Sources */,
+				E5F9FB5D1B4A11F0009BEB08 /* TableViewCell.m in Sources */,
 				E5F3B9F11B499399009CC9E7 /* AFHTTPRequestOperationManager.m in Sources */,
 				E5F3B9FE1B499399009CC9E7 /* UIProgressView+AFNetworking.m in Sources */,
 				E5F3B9F31B499399009CC9E7 /* AFNetworkReachabilityManager.m in Sources */,

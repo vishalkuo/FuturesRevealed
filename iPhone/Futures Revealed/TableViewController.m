@@ -9,6 +9,8 @@
 #import "TableViewController.h"
 #import "SurveyObject.h"
 #import "AFNetworking.h"
+#import "TableViewCell.h"
+
 static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
 
 @interface TableViewController ()
@@ -49,23 +51,26 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    static NSString *simpleTableIdentifier = @"TableCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    TableViewCell *cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
     NSMutableDictionary *dict = (NSMutableDictionary *)[_surveyList objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [dict valueForKey:@"name"];
+    cell.surveyName.text = [dict valueForKey:@"name"];
+    cell.surveyDescrip.text = [dict valueForKey:@"surveyDescription"];
+    
     return cell;
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //Your Code here
-    //NSLog(_recipes[indexPath.row]);
+    //NSLog([_surveyList[indexPath.row] description]);
 }
 
 -(void)loadSurveys{
@@ -83,12 +88,16 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
             
         }
         [self.tableView reloadData];
-        
+        NSLog(@"GOOD");
         
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",[error localizedDescription]);
     }];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
 }
 
 @end
