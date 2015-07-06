@@ -12,6 +12,6 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *surveyName;
 @property (nonatomic, weak) IBOutlet UILabel *surveyDescrip;
-
+@property (nonatomic, weak) IBOutlet UIView *cardView;
 
 @end
