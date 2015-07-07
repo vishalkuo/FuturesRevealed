@@ -1,0 +1,88 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<vishalkuo.com.futuresrevealed.customScroll
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id = "@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/abouttwo"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grad"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "About"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:textSize= "40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text = "@string/totalAbout"
+            android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Our Values"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/values"
+                android:paddingLeft="16dp"
+                android:textSize="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"/>
+
+
+         <TextView
+             android:id = "@+id/webText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text = "test"
+             android:paddingLeft="16dp"
+             android:paddingRight="16dp"
+             android:paddingBottom="16dp"
+             android:textSize="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</vishalkuo.com.futuresrevealed.customScroll>

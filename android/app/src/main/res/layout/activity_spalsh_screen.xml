@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="vishalkuo.com.futuresrevealed.SplashScreen">
+
+
+        <ImageView
+            android:id = "@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bg"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id = "@+id/openingF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "F"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id = "@+id/pt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "utures"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id = "@+id/pt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Revealed"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size"
+
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/surveys"
+            android:elevation="5dp"
+            android:text="Surveys"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/openingF"
+            />
+        <Button
+            android:id="@+id/eList"
+            android:elevation="5dp"
+            android:layout_margin="18dp"
+            android:text="Email List"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:onClick="sendEmail"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect"
+            android:layout_below="@id/surveys"
+            />
+        <Button
+            android:id="@+id/learnMore"
+            android:elevation="5dp"
+            android:text="Learn More"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:textAllCaps="false"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect"
+            android:layout_below="@id/eList"
+            android:onClick="prepLearn"
+            />
+
+        <Button
+            android:id="@+id/About"
+            android:elevation="18dp"
+            android:text="About"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_marginBottom="18dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect"
+            android:layout_above="@id/openingF"
+            android:visibility="gone"
+            android:enabled="false"
+            />
+        <Button
+            android:id="@+id/Contact"
+            android:elevation="5dp"
+            android:text="Contact"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect"
+            android:layout_marginBottom="18dp"
+            android:visibility="gone"
+            android:enabled="false"
+            />
+
+        <Button
+            android:id="@+id/website"
+            android:elevation="5dp"
+            android:text="Website"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:background="@drawable/btnselect"
+            android:layout_below="@id/Contact"
+            android:visibility="gone"
+            android:enabled="false"
+            android:clickable="false"
+            />
+
+        <Button
+            android:id="@+id/goBack"
+            android:visibility="gone"
+            android:elevation="5dp"
+            android:text="Go Back"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:background="@drawable/gobackselect"
+            android:layout_below="@id/eList"
+            android:enabled="false"
+            android:onClick="goBack"
+            />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-3429ee7b352193faa1d71144e662c8927100253e.jar" />
+    </item>
+    <item
+        jar="/Applications/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-b6df98d4794085161863af40b8f48b305692e751.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-efd937826d7e2f4194a30a46bfe2877cfe2d6275.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0-0dcf7ed83cdcf422f4cd7ea1a8a2dd01ba802ffe.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-b5d526bbd773c58e3204c1c6ab1aa24763084554.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/gson-2.3.1-7ecb8f6a4ab7559940b6375459f1ae1d1e10e09d.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/classes-adfddecda9de1cf6fdf838592054c6105bb0fa74.jar" />
+    </item>
+    <item
+        jar="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/vishalkuo/AndroidStudioProjects/FuturesRevealed/android/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-9675b12ef4a4d1c1895125168c0810d1fab8aa9f.jar" />
+    </item>
+
+</items>
