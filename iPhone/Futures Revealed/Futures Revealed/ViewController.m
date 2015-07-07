@@ -13,6 +13,8 @@
 @interface ViewController ()
 
 -(BOOL)internetCheck;
+-(void)emailMethod;
+-(void)postEmail:(NSString *)address;
 
 @end
 
@@ -21,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [_emailButton addTarget:self action:@selector(emailMethod) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -54,6 +58,42 @@
 
     }
     return NO;
+}
+
+-(void)emailMethod{
+    if([self internetCheck]){
+
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sign Up" message:@"Sign up to recieve email updates for userful information and upcoming talks.\nNote: Futures Revealed will never distribute your email"  preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            UITextField *tempField = (UITextField *)alert.textFields.firstObject;
+            if ([tempField.text length] != 0){
+                [self postEmail:tempField.text];
+            }else{
+                [ToastView showToast:self.view withText:@"Please enter an email address." withDuaration:1.0];
+            }
+        }];
+        
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [alert dismissViewControllerAnimated:YES completion:nil];
+        }];
+        
+        [alert addAction:ok];
+        [alert addAction:cancel];
+        [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+            textField.placeholder = @"Email";
+
+        }];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    }else{
+        [ToastView showToast:self.view withText:@"No internet. Try again later." withDuaration:1.0];
+    }
+}
+
+-(void)postEmail:(NSString *)address{
+    
 }
 
 
