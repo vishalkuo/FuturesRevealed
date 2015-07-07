@@ -14,6 +14,7 @@
 @property(weak, nonatomic)IBOutlet UIButton *emailButton;
 @property(weak, nonatomic)IBOutlet UIButton *learnMoreButton;
 
+@property BOOL *isInAlternateState;
 
 
 @end

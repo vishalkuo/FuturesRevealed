@@ -23,11 +23,12 @@
 -(void)layoutSubviews{
     [self.cardView setAlpha:1];
     self.cardView.layer.masksToBounds = NO;
-    self.cardView.layer.cornerRadius = 1; // if you like rounded corners
-    self.cardView.layer.shadowOffset = CGSizeMake(-.8f, .8f); //%%% this shadow will hang slightly down and to the right
-    self.cardView.layer.shadowRadius = 1; //%%% I prefer thinner, subtler shadows, but you can play with this
-    self.cardView.layer.shadowOpacity = 0.2; //%%% same thing with this, subtle is better for me
+    self.cardView.layer.cornerRadius = 2;
+    self.cardView.layer.shadowOffset = CGSizeMake(-.8f, .8f);
+    self.cardView.layer.shadowRadius = 1;
+    self.cardView.layer.shadowOpacity = 0.2;
     
+    [_surveyDescrip sizeToFit];
  
     
 }

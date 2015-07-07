@@ -92,7 +92,6 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
             
         }
         [self.tableView reloadData];
-        NSLog(@"GOOD");
         
 
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

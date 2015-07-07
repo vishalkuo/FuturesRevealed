@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Reachability.h"
+#import "ToastView.h"
+
 @interface ViewController ()
 
+-(BOOL)internetCheck;
 
 @end
 
@@ -28,6 +32,28 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO];
+}
+
+-(BOOL)internetCheck{
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus stat = [networkReachability currentReachabilityStatus];
+    if (stat == NotReachable){
+        return NO;
+    }
+    return YES;
+}
+
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+    if ([identifier isEqualToString:@"internetSegue"]){
+        if ([self internetCheck]){
+            return YES;
+        }
+        [ToastView showToast:self.view withText:@"No internet. Try again later." withDuaration:1.0];
+        return NO;
+
+    }
+    return NO;
 }
 
 

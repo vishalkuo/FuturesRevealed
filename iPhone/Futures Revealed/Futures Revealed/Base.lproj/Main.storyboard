@@ -57,7 +57,7 @@
                                     <rect key="frame" x="172" y="285" width="57" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="kM0-b8-mKV" kind="show" id="UWG-Tt-jVU"/>
+                                    <segue destination="kM0-b8-mKV" kind="show" identifier="internetSegue" id="UWG-Tt-jVU"/>
                                 </connections>
                             </button>
                         </subviews>
