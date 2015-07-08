@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "Reachability.h"
 #import "ToastView.h"
+#import "AFNetworking.h"
+
+static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phptest.php";
 
 @interface ViewController ()
 
@@ -83,7 +86,7 @@
         [alert addAction:ok];
         [alert addAction:cancel];
         [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-            textField.placeholder = @"Name";
+            textField.placeholder = @"Name (Optional)";
         }];
         [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
             textField.placeholder = @"Email";
@@ -98,7 +101,13 @@
 }
 
 -(void)postEmail:(NSString *)name emailAddress:(NSString *)address{
-    
+    AFHTTPRequestOperationManager *manager= [AFHTTPRequestOperationManager manager];
+    NSDictionary *params = @{@"firstname":name, @"email": address};
+    [manager POST:URL_CONSTANT parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"HERE");
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",[error localizedDescription]);
+    }];
 }
 
 
