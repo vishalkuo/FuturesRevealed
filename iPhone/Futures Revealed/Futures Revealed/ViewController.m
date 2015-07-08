@@ -14,7 +14,7 @@
 
 -(BOOL)internetCheck;
 -(void)emailMethod;
--(void)postEmail:(NSString *)address;
+-(void)postEmail:(NSString *)name emailAddress:(NSString *)address;
 
 @end
 
@@ -66,9 +66,11 @@
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sign Up" message:@"Sign up to recieve email updates for userful information and upcoming talks.\nNote: Futures Revealed will never distribute your email"  preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            UITextField *tempField = (UITextField *)alert.textFields.firstObject;
+            UITextField *tempName = (UITextField *)alert.textFields.firstObject;
+            UITextField *tempField = (UITextField *)alert.textFields[1];
             if ([tempField.text length] != 0){
-                [self postEmail:tempField.text];
+                NSLog(@"%@ %@", tempName.text, tempField.text);
+                [self postEmail:tempName.text emailAddress:tempField.text];
             }else{
                 [ToastView showToast:self.view withText:@"Please enter an email address." withDuaration:1.0];
             }
@@ -81,6 +83,9 @@
         [alert addAction:ok];
         [alert addAction:cancel];
         [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+            textField.placeholder = @"Name";
+        }];
+        [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
             textField.placeholder = @"Email";
 
         }];
@@ -92,7 +97,7 @@
     }
 }
 
--(void)postEmail:(NSString *)address{
+-(void)postEmail:(NSString *)name emailAddress:(NSString *)address{
     
 }
 
