@@ -14,8 +14,11 @@
 @property(weak, nonatomic)IBOutlet UIButton *emailButton;
 @property(weak, nonatomic)IBOutlet UIButton *learnMoreButton;
 
-@property BOOL *isInAlternateState;
-
-
+//Alternate State
+@property(nonatomic, assign)BOOL isInAlternateState;
+@property(weak, nonatomic)IBOutlet UIButton *backButton;
+@property(weak, nonatomic)IBOutlet UIButton *aboutButton;
+@property(weak, nonatomic)IBOutlet UIButton *contactButton;
+@property(weak, nonatomic)IBOutlet UIButton *websiteButton;
 @end
 

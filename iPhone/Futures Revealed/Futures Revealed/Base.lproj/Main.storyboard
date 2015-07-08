@@ -21,11 +21,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-ji-JhX">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                    <rect key="frame" x="-21" y="-32" width="443" height="664"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-X4-f56">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="28" y="58" width="345" height="128"/>
+                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVd-oY-mwy">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -60,6 +63,53 @@
                                     <rect key="frame" x="166" y="338" width="68" height="30"/>
                                 </variation>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw2-2f-zfa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="285" width="118" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="yvG-S2-4uf" kind="show" id="xyF-ga-nKn"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5og-73-qPZ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Contact">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="338" width="118" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="T2N-Do-wGe" kind="show" id="eAK-rt-IAm"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e02-PD-xpd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Website">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="394" width="118" height="30"/>
+                                </variation>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvh-6s-93Q">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="550" width="68" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -79,12 +129,16 @@
                                 <exclude reference="VVd-oY-mwy"/>
                                 <exclude reference="VuU-by-g7Q"/>
                                 <exclude reference="o6t-GK-Xch"/>
+                                <exclude reference="pw2-2f-zfa"/>
+                                <exclude reference="5og-73-qPZ"/>
+                                <exclude reference="e02-PD-xpd"/>
+                                <exclude reference="dvh-6s-93Q"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="6tc-0J-4VT"/>
                                 <exclude reference="XFy-t8-Wsx"/>
                                 <exclude reference="Xfb-84-l2d"/>
                                 <exclude reference="eG4-Uw-2MG"/>
+                                <exclude reference="6tc-0J-4VT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -94,28 +148,70 @@
                                 <include reference="VVd-oY-mwy"/>
                                 <include reference="VuU-by-g7Q"/>
                                 <include reference="o6t-GK-Xch"/>
+                                <include reference="pw2-2f-zfa"/>
+                                <include reference="5og-73-qPZ"/>
+                                <include reference="e02-PD-xpd"/>
+                                <include reference="dvh-6s-93Q"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="6tc-0J-4VT"/>
                                 <include reference="XFy-t8-Wsx"/>
                                 <include reference="Xfb-84-l2d"/>
                                 <include reference="eG4-Uw-2MG"/>
+                                <include reference="6tc-0J-4VT"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Ycv-4b-Gzp"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="aboutButton" destination="pw2-2f-zfa" id="Avb-5n-NuD"/>
+                        <outlet property="backButton" destination="dvh-6s-93Q" id="Jyi-uW-3mf"/>
+                        <outlet property="contactButton" destination="5og-73-qPZ" id="9Sb-Hz-ztM"/>
                         <outlet property="emailButton" destination="o6t-GK-Xch" id="gsE-vx-5Hv"/>
                         <outlet property="learnMoreButton" destination="VVd-oY-mwy" id="YXK-tI-1be"/>
                         <outlet property="surveyButton" destination="VuU-by-g7Q" id="S18-SG-FQH"/>
+                        <outlet property="websiteButton" destination="e02-PD-xpd" id="yPe-C9-VQp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1356" y="371"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mxo-6d-csl">
+            <objects>
+                <viewController id="yvG-S2-4uf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vxq-6I-oS3"/>
+                        <viewControllerLayoutGuide type="bottom" id="mQm-V4-L45"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ucC-Kv-0cD">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m1O-qn-wCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351.5" y="1106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="slD-yK-tKI">
+            <objects>
+                <viewController id="T2N-Do-wGe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wQJ-z6-FKu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ee4-9k-Cvc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ey0-6A-mdz">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Urq-5j-5ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2029.5" y="1095"/>
         </scene>
         <!--Surveys-->
         <scene sceneID="ffi-up-TnN">
@@ -128,7 +224,7 @@
                         <color key="sectionIndexBackgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="160" id="fUf-xO-mw6">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="myIdentifier" rowHeight="160" id="fUf-xO-mw6">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUf-xO-mw6" id="uci-ed-Ddd">
                                     <autoresizingMask key="autoresizingMask"/>

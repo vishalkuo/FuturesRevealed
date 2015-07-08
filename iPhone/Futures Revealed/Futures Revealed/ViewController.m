@@ -12,22 +12,33 @@
 #import "AFNetworking.h"
 
 static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phptest.php";
+static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
 
 @interface ViewController ()
 
 -(BOOL)internetCheck;
 -(void)emailMethod;
 -(void)postEmail:(NSString *)name emailAddress:(NSString *)address;
-
+-(void)toggleLearnMore;
+-(void)backMethod;
+-(void)navToWebsite;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    _isInAlternateState = NO;
     [_emailButton addTarget:self action:@selector(emailMethod) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_learnMoreButton addTarget:self action:@selector(toggleLearnMore) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_backButton addTarget:self action:@selector(backMethod) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_websiteButton addTarget:self action:@selector(navToWebsite) forControlEvents:UIControlEventTouchUpInside];
+    
     
 }
 
@@ -60,7 +71,7 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phptest.php";
         return NO;
 
     }
-    return NO;
+    return YES;
 }
 
 -(void)emailMethod{
@@ -83,8 +94,9 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phptest.php";
             [alert dismissViewControllerAnimated:YES completion:nil];
         }];
         
-        [alert addAction:ok];
         [alert addAction:cancel];
+        [alert addAction:ok];
+
         [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
             textField.placeholder = @"Name (Optional)";
         }];
@@ -110,5 +122,43 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phptest.php";
     }];
 }
 
+-(void)toggleLearnMore{
+    if (!_isInAlternateState){
+        [_backButton setHidden:NO];
+        [_aboutButton setHidden:NO];
+        [_contactButton setHidden:NO];
+        [_websiteButton setHidden:NO];
+        
+        [_learnMoreButton setHidden:YES];
+        [_surveyButton setHidden:YES];
+        [_emailButton setHidden:YES];
+        
+        
+    }else{
+        [_backButton setHidden:YES];
+        [_aboutButton setHidden:YES];
+        [_contactButton setHidden:YES];
+        [_websiteButton setHidden:YES];
+        
+        [_learnMoreButton setHidden:NO];
+        [_surveyButton setHidden:NO];
+        [_emailButton setHidden:NO];
+        
+        
+    }
+    _isInAlternateState = !_isInAlternateState;
+}
+
+-(void)backMethod{
+    [self toggleLearnMore];
+}
+-(void)navToWebsite{
+    if ([self internetCheck]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:OFFICAL_SITE]];
+    }else{
+        [ToastView showToast:self.view withText:@"No internet. Try again later." withDuaration:1.0];
+    }
+    
+}
 
 @end
