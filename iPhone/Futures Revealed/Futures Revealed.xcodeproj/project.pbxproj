@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E51FDB6F1B49C70400313B37 /* SurveyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FDB6E1B49C70400313B37 /* SurveyObject.m */; };
+		E542E5FE1B4DE481006BFB3C /* aboutbg.9.png in Resources */ = {isa = PBXBuildFile; fileRef = E542E5FD1B4DE481006BFB3C /* aboutbg.9.png */; };
+		E542E6011B4DE4EC006BFB3C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E542E6001B4DE4EC006BFB3C /* AboutViewController.m */; };
+		E542E6031B4DEC33006BFB3C /* aboutbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E542E6021B4DEC33006BFB3C /* aboutbg.png */; };
 		E54B65F81B4B465B009ED0A0 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B65F71B4B465B009ED0A0 /* ToastView.m */; };
 		E54B65FC1B4B4A0F009ED0A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B65FB1B4B4A0F009ED0A0 /* Reachability.m */; };
 		E5789F4F1AB3819500EAFEBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F4E1AB3819500EAFEBD /* main.m */; };
@@ -59,6 +62,10 @@
 /* Begin PBXFileReference section */
 		E51FDB6D1B49C70400313B37 /* SurveyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyObject.h; sourceTree = "<group>"; };
 		E51FDB6E1B49C70400313B37 /* SurveyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyObject.m; sourceTree = "<group>"; };
+		E542E5FD1B4DE481006BFB3C /* aboutbg.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutbg.9.png; sourceTree = "<group>"; };
+		E542E5FF1B4DE4EC006BFB3C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		E542E6001B4DE4EC006BFB3C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		E542E6021B4DEC33006BFB3C /* aboutbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutbg.png; path = "../Futures Revealed/aboutbg.png"; sourceTree = "<group>"; };
 		E54B65F61B4B465B009ED0A0 /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
 		E54B65F71B4B465B009ED0A0 /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
 		E54B65FA1B4B4A0F009ED0A0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -81,7 +88,7 @@
 		E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo copy.png"; sourceTree = "<group>"; };
 		E58E10F11AB658E00093E83E /* Multi-coloured logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo.png"; sourceTree = "<group>"; };
 		E5AF53371B48C74B0055C686 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		E5F3B9C81B499135009CC9E7 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		E5F3B9C81B499135009CC9E7 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = "../Futures Revealed/Title.png"; sourceTree = "<group>"; };
 		E5F3B9CB1B499399009CC9E7 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		E5F3B9CC1B499399009CC9E7 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		E5F3B9CD1B499399009CC9E7 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -196,7 +203,8 @@
 				E5789F531AB3819500EAFEBD /* ViewController.h */,
 				E5789F541AB3819500EAFEBD /* ViewController.m */,
 				E5789F561AB3819500EAFEBD /* Main.storyboard */,
-				E5F3B9C81B499135009CC9E7 /* Title.png */,
+				E542E5FF1B4DE4EC006BFB3C /* AboutViewController.h */,
+				E542E6001B4DE4EC006BFB3C /* AboutViewController.m */,
 				E5789F591AB3819500EAFEBD /* Images.xcassets */,
 				E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */,
 				E5789F4C1AB3819500EAFEBD /* Supporting Files */,
@@ -233,8 +241,11 @@
 		E58E10EE1AB658A50093E83E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E542E5FD1B4DE481006BFB3C /* aboutbg.9.png */,
 				E5AF53371B48C74B0055C686 /* bg.jpg */,
 				E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */,
+				E542E6021B4DEC33006BFB3C /* aboutbg.png */,
+				E5F3B9C81B499135009CC9E7 /* Title.png */,
 				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
 				E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */,
 			);
@@ -375,8 +386,10 @@
 				E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */,
 				E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */,
 				E5789F581AB3819500EAFEBD /* Main.storyboard in Resources */,
+				E542E5FE1B4DE481006BFB3C /* aboutbg.9.png in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
 				E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */,
+				E542E6031B4DEC33006BFB3C /* aboutbg.png in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
 				E5AF53381B48C74B0055C686 /* bg.jpg in Resources */,
 				E5F3B9C91B499135009CC9E7 /* Title.png in Resources */,
@@ -422,6 +435,7 @@
 				E5F3B9F81B499399009CC9E7 /* AFURLSessionManager.m in Sources */,
 				E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */,
 				E5F3BA091B4999DD009CC9E7 /* TableViewController.m in Sources */,
+				E542E6011B4DE4EC006BFB3C /* AboutViewController.m in Sources */,
 				E5789F4F1AB3819500EAFEBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
