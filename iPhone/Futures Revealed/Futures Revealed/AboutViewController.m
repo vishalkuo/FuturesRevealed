@@ -26,6 +26,8 @@
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+
 
 }
 
@@ -46,6 +48,10 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:NO];
+}
+
+-(void)viewDidLayoutSubviews{
+        [_aboutView sizeToFit];
 }
 
 @end

@@ -9,5 +9,5 @@
 #import "ViewController.h"
 
 @interface AboutViewController : ViewController
-
+@property(weak, nonatomic)IBOutlet UILabel *aboutView;
 @end
