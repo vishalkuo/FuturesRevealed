@@ -406,27 +406,27 @@
                                 <exclude reference="Q3C-4s-1Y4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="NLh-ja-L1r"/>
-                                <exclude reference="R1F-gu-TYV"/>
-                                <exclude reference="kre-DY-p2U"/>
+                                <exclude reference="JFk-ly-Z6f"/>
+                                <exclude reference="kFG-JA-atf"/>
                                 <exclude reference="3Cf-Xz-f8n"/>
                                 <exclude reference="9gl-Ce-OQJ"/>
                                 <exclude reference="Ed9-G1-KkD"/>
-                                <exclude reference="84u-qr-sVr"/>
-                                <exclude reference="y7W-Vx-DHH"/>
+                                <exclude reference="Isr-Da-Dvo"/>
+                                <exclude reference="S5X-rg-p8l"/>
                                 <exclude reference="7dh-hn-4gw"/>
                                 <exclude reference="B4U-2Y-N7f"/>
                                 <exclude reference="bPY-Xt-Ika"/>
                                 <exclude reference="c49-9n-yoZ"/>
                                 <exclude reference="wYR-6T-iEu"/>
+                                <exclude reference="84u-qr-sVr"/>
+                                <exclude reference="y7W-Vx-DHH"/>
                                 <exclude reference="sxJ-CJ-BbI"/>
                                 <exclude reference="8hx-N1-S7u"/>
                                 <exclude reference="uA7-2z-9YT"/>
                                 <exclude reference="v1z-zu-ZGg"/>
-                                <exclude reference="Isr-Da-Dvo"/>
-                                <exclude reference="S5X-rg-p8l"/>
-                                <exclude reference="JFk-ly-Z6f"/>
-                                <exclude reference="kFG-JA-atf"/>
+                                <exclude reference="NLh-ja-L1r"/>
+                                <exclude reference="R1F-gu-TYV"/>
+                                <exclude reference="kre-DY-p2U"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -440,30 +440,37 @@
                                 <include reference="Q3C-4s-1Y4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="NLh-ja-L1r"/>
-                                <include reference="R1F-gu-TYV"/>
-                                <include reference="kre-DY-p2U"/>
+                                <include reference="JFk-ly-Z6f"/>
+                                <include reference="kFG-JA-atf"/>
                                 <include reference="3Cf-Xz-f8n"/>
                                 <include reference="9gl-Ce-OQJ"/>
                                 <include reference="Ed9-G1-KkD"/>
-                                <include reference="84u-qr-sVr"/>
-                                <include reference="y7W-Vx-DHH"/>
+                                <include reference="Isr-Da-Dvo"/>
+                                <include reference="S5X-rg-p8l"/>
                                 <include reference="7dh-hn-4gw"/>
                                 <include reference="B4U-2Y-N7f"/>
                                 <include reference="bPY-Xt-Ika"/>
                                 <include reference="c49-9n-yoZ"/>
                                 <include reference="wYR-6T-iEu"/>
+                                <include reference="84u-qr-sVr"/>
+                                <include reference="y7W-Vx-DHH"/>
                                 <include reference="sxJ-CJ-BbI"/>
                                 <include reference="8hx-N1-S7u"/>
                                 <include reference="uA7-2z-9YT"/>
                                 <include reference="v1z-zu-ZGg"/>
-                                <include reference="Isr-Da-Dvo"/>
-                                <include reference="S5X-rg-p8l"/>
-                                <include reference="JFk-ly-Z6f"/>
-                                <include reference="kFG-JA-atf"/>
+                                <include reference="NLh-ja-L1r"/>
+                                <include reference="R1F-gu-TYV"/>
+                                <include reference="kre-DY-p2U"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailBtn" destination="9Sx-BV-EGs" id="twe-ku-v2g"/>
+                        <outlet property="facebookBtn" destination="WvZ-Lo-k48" id="jzL-7E-hr3"/>
+                        <outlet property="linkedInBtn" destination="wBg-LD-y8w" id="bIT-d3-USj"/>
+                        <outlet property="twitterBtn" destination="Q3C-4s-1Y4" id="UFi-a8-S2k"/>
+                        <outlet property="websiteBtn" destination="q3f-AU-e3a" id="qQ2-3B-A8U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urq-5j-5ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
