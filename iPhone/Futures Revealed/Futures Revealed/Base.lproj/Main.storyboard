@@ -209,7 +209,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIH-ba-LHZ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -222,10 +222,19 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Values" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBJ-Iy-mLt">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nc-UX-Z7H">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">• To learn with our students and clients so that we are always well informed and ready to go.
+• To share with students our experience and knowledge in hopes that we can further their potential.
+• To improve the environment that we enter in one way or another, always striving for tangible change</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -233,13 +242,17 @@
                             <constraint firstItem="zaq-jt-aZu" firstAttribute="leading" secondItem="VoO-Fg-IN1" secondAttribute="leadingMargin" constant="16" id="2rd-zf-P7p"/>
                             <constraint firstItem="8MT-go-MAp" firstAttribute="top" secondItem="EIH-ba-LHZ" secondAttribute="bottom" constant="382" id="3EL-TX-lFU"/>
                             <constraint firstItem="EIH-ba-LHZ" firstAttribute="top" secondItem="0Y1-Q8-f3h" secondAttribute="bottom" constant="26" id="FvL-cX-Frm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3nc-UX-Z7H" secondAttribute="trailing" constant="16" id="Ikk-G1-Ph5"/>
+                            <constraint firstItem="3nc-UX-Z7H" firstAttribute="leading" secondItem="VoO-Fg-IN1" secondAttribute="leadingMargin" constant="16" id="QJl-Zf-vKr"/>
                             <constraint firstItem="0Y1-Q8-f3h" firstAttribute="leading" secondItem="VoO-Fg-IN1" secondAttribute="leading" id="YkO-cp-Hm4"/>
                             <constraint firstItem="BBJ-Iy-mLt" firstAttribute="top" secondItem="zaq-jt-aZu" secondAttribute="bottom" constant="16" id="bmz-kE-tHB"/>
                             <constraint firstItem="zaq-jt-aZu" firstAttribute="top" secondItem="EIH-ba-LHZ" secondAttribute="bottom" constant="16" id="daQ-6b-kBt">
                                 <variation key="widthClass=compact" constant="12"/>
                             </constraint>
+                            <constraint firstItem="8MT-go-MAp" firstAttribute="top" secondItem="3nc-UX-Z7H" secondAttribute="bottom" constant="16" id="he1-p6-gu0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zaq-jt-aZu" secondAttribute="trailing" constant="16" id="jie-Th-knp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BBJ-Iy-mLt" secondAttribute="trailing" constant="16" id="oVH-0A-t4y"/>
+                            <constraint firstItem="3nc-UX-Z7H" firstAttribute="top" secondItem="BBJ-Iy-mLt" secondAttribute="bottom" id="qgg-zv-yC1"/>
                             <constraint firstItem="BBJ-Iy-mLt" firstAttribute="leading" secondItem="VoO-Fg-IN1" secondAttribute="leadingMargin" constant="16" id="sFW-yF-S0p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EIH-ba-LHZ" secondAttribute="trailing" constant="16" id="tZe-Oa-rc9">
                                 <variation key="widthClass=compact" constant="16"/>
@@ -251,6 +264,7 @@
                                 <exclude reference="EIH-ba-LHZ"/>
                                 <exclude reference="zaq-jt-aZu"/>
                                 <exclude reference="BBJ-Iy-mLt"/>
+                                <exclude reference="3nc-UX-Z7H"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="YkO-cp-Hm4"/>
@@ -263,7 +277,11 @@
                                 <exclude reference="bmz-kE-tHB"/>
                                 <exclude reference="oVH-0A-t4y"/>
                                 <exclude reference="sFW-yF-S0p"/>
+                                <exclude reference="Ikk-G1-Ph5"/>
+                                <exclude reference="QJl-Zf-vKr"/>
+                                <exclude reference="qgg-zv-yC1"/>
                                 <exclude reference="3EL-TX-lFU"/>
+                                <exclude reference="he1-p6-gu0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -272,6 +290,7 @@
                                 <include reference="EIH-ba-LHZ"/>
                                 <include reference="zaq-jt-aZu"/>
                                 <include reference="BBJ-Iy-mLt"/>
+                                <include reference="3nc-UX-Z7H"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="YkO-cp-Hm4"/>
@@ -284,7 +303,11 @@
                                 <include reference="bmz-kE-tHB"/>
                                 <include reference="oVH-0A-t4y"/>
                                 <include reference="sFW-yF-S0p"/>
+                                <include reference="Ikk-G1-Ph5"/>
+                                <include reference="QJl-Zf-vKr"/>
+                                <include reference="qgg-zv-yC1"/>
                                 <include reference="3EL-TX-lFU"/>
+                                <include reference="he1-p6-gu0"/>
                             </mask>
                         </variation>
                     </view>
@@ -365,22 +388,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lc4-of-M3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="438" y="371"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hso-KB-JbE">
-            <objects>
-                <viewController id="X6z-Im-XLB" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1Zm-BI-3wP"/>
-                        <viewControllerLayoutGuide type="bottom" id="8SZ-Xo-ebb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d7K-93-RDo">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xd-Xr-ARW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

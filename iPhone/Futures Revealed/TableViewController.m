@@ -21,10 +21,11 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
 
     _surveyList= [[NSMutableArray alloc] init];
     // Do any additional setup after loading the view.
-    _recipes = [NSArray arrayWithObjects:@"Egg Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwich", @"Creme Brelee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     
     [self loadSurveys];
 
@@ -101,6 +102,10 @@ static NSString *const URL_CONSTANT = @"http://www.vishalkuo.com/phpGet.php";
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 200;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+
 }
 
 @end

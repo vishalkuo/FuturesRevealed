@@ -10,4 +10,5 @@
 
 @interface AboutViewController : ViewController
 @property(weak, nonatomic)IBOutlet UILabel *aboutView;
+@property(weak, nonatomic)IBOutlet UILabel *ourValues;
 @end
