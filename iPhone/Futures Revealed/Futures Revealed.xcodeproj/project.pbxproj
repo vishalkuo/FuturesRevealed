@@ -13,6 +13,8 @@
 		E542E6031B4DEC33006BFB3C /* aboutbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E542E6021B4DEC33006BFB3C /* aboutbg.png */; };
 		E54B65F81B4B465B009ED0A0 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B65F71B4B465B009ED0A0 /* ToastView.m */; };
 		E54B65FC1B4B4A0F009ED0A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B65FB1B4B4A0F009ED0A0 /* Reachability.m */; };
+		E569ABE41B516805008DDEE1 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E569ABE31B516805008DDEE1 /* ContactViewController.m */; };
+		E569ABE61B51690C008DDEE1 /* contactbg.9.png in Resources */ = {isa = PBXBuildFile; fileRef = E569ABE51B51690C008DDEE1 /* contactbg.9.png */; };
 		E5789F4F1AB3819500EAFEBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F4E1AB3819500EAFEBD /* main.m */; };
 		E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F511AB3819500EAFEBD /* AppDelegate.m */; };
 		E5789F551AB3819500EAFEBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F541AB3819500EAFEBD /* ViewController.m */; };
@@ -70,6 +72,9 @@
 		E54B65F71B4B465B009ED0A0 /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
 		E54B65FA1B4B4A0F009ED0A0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E54B65FB1B4B4A0F009ED0A0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E569ABE21B516805008DDEE1 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		E569ABE31B516805008DDEE1 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		E569ABE51B51690C008DDEE1 /* contactbg.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactbg.9.png; sourceTree = "<group>"; };
 		E5789F491AB3819500EAFEBD /* Futures Revealed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Futures Revealed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789F4D1AB3819500EAFEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5789F4E1AB3819500EAFEBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -203,8 +208,11 @@
 				E5789F531AB3819500EAFEBD /* ViewController.h */,
 				E5789F541AB3819500EAFEBD /* ViewController.m */,
 				E5789F561AB3819500EAFEBD /* Main.storyboard */,
+				E569ABE51B51690C008DDEE1 /* contactbg.9.png */,
 				E542E5FF1B4DE4EC006BFB3C /* AboutViewController.h */,
 				E542E6001B4DE4EC006BFB3C /* AboutViewController.m */,
+				E569ABE21B516805008DDEE1 /* ContactViewController.h */,
+				E569ABE31B516805008DDEE1 /* ContactViewController.m */,
 				E5789F591AB3819500EAFEBD /* Images.xcassets */,
 				E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */,
 				E5789F4C1AB3819500EAFEBD /* Supporting Files */,
@@ -389,6 +397,7 @@
 				E542E5FE1B4DE481006BFB3C /* aboutbg.9.png in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
 				E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */,
+				E569ABE61B51690C008DDEE1 /* contactbg.9.png in Resources */,
 				E542E6031B4DEC33006BFB3C /* aboutbg.png in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
 				E5AF53381B48C74B0055C686 /* bg.jpg in Resources */,
@@ -433,6 +442,7 @@
 				E5F3B9F61B499399009CC9E7 /* AFURLRequestSerialization.m in Sources */,
 				E5F3B9F91B499399009CC9E7 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				E5F3B9F81B499399009CC9E7 /* AFURLSessionManager.m in Sources */,
+				E569ABE41B516805008DDEE1 /* ContactViewController.m in Sources */,
 				E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */,
 				E5F3BA091B4999DD009CC9E7 /* TableViewController.m in Sources */,
 				E542E6011B4DE4EC006BFB3C /* AboutViewController.m in Sources */,

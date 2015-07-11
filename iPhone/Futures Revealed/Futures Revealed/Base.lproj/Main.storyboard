@@ -267,21 +267,21 @@
                                 <exclude reference="3nc-UX-Z7H"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="YkO-cp-Hm4"/>
+                                <exclude reference="3EL-TX-lFU"/>
+                                <exclude reference="he1-p6-gu0"/>
+                                <exclude reference="bmz-kE-tHB"/>
+                                <exclude reference="oVH-0A-t4y"/>
+                                <exclude reference="sFW-yF-S0p"/>
                                 <exclude reference="2AV-RG-lBd"/>
                                 <exclude reference="FvL-cX-Frm"/>
                                 <exclude reference="tZe-Oa-rc9"/>
                                 <exclude reference="2rd-zf-P7p"/>
                                 <exclude reference="daQ-6b-kBt"/>
                                 <exclude reference="jie-Th-knp"/>
-                                <exclude reference="bmz-kE-tHB"/>
-                                <exclude reference="oVH-0A-t4y"/>
-                                <exclude reference="sFW-yF-S0p"/>
+                                <exclude reference="YkO-cp-Hm4"/>
                                 <exclude reference="Ikk-G1-Ph5"/>
                                 <exclude reference="QJl-Zf-vKr"/>
                                 <exclude reference="qgg-zv-yC1"/>
-                                <exclude reference="3EL-TX-lFU"/>
-                                <exclude reference="he1-p6-gu0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -293,21 +293,21 @@
                                 <include reference="3nc-UX-Z7H"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="YkO-cp-Hm4"/>
+                                <include reference="3EL-TX-lFU"/>
+                                <include reference="he1-p6-gu0"/>
+                                <include reference="bmz-kE-tHB"/>
+                                <include reference="oVH-0A-t4y"/>
+                                <include reference="sFW-yF-S0p"/>
                                 <include reference="2AV-RG-lBd"/>
                                 <include reference="FvL-cX-Frm"/>
                                 <include reference="tZe-Oa-rc9"/>
                                 <include reference="2rd-zf-P7p"/>
                                 <include reference="daQ-6b-kBt"/>
                                 <include reference="jie-Th-knp"/>
-                                <include reference="bmz-kE-tHB"/>
-                                <include reference="oVH-0A-t4y"/>
-                                <include reference="sFW-yF-S0p"/>
+                                <include reference="YkO-cp-Hm4"/>
                                 <include reference="Ikk-G1-Ph5"/>
                                 <include reference="QJl-Zf-vKr"/>
                                 <include reference="qgg-zv-yC1"/>
-                                <include reference="3EL-TX-lFU"/>
-                                <include reference="he1-p6-gu0"/>
                             </mask>
                         </variation>
                     </view>
@@ -319,10 +319,10 @@
             </objects>
             <point key="canvasLocation" x="999" y="1100"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact View Controller-->
         <scene sceneID="slD-yK-tKI">
             <objects>
-                <viewController id="T2N-Do-wGe" sceneMemberID="viewController">
+                <viewController id="T2N-Do-wGe" customClass="ContactViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wQJ-z6-FKu"/>
                         <viewControllerLayoutGuide type="bottom" id="Ee4-9k-Cvc"/>
@@ -330,7 +330,40 @@
                     <view key="view" contentMode="scaleToFill" id="Ey0-6A-mdz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactbg.9.png" translatesAutoresizingMaskIntoConstraints="NO" id="sba-bI-haD">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sba-bI-haD" firstAttribute="top" secondItem="wQJ-z6-FKu" secondAttribute="bottom" constant="-49" id="NLh-ja-L1r"/>
+                            <constraint firstItem="sba-bI-haD" firstAttribute="leading" secondItem="Ey0-6A-mdz" secondAttribute="leadingMargin" constant="-16" id="R1F-gu-TYV"/>
+                            <constraint firstItem="Ee4-9k-Cvc" firstAttribute="top" secondItem="sba-bI-haD" secondAttribute="bottom" constant="387" id="kFG-JA-atf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sba-bI-haD" secondAttribute="trailing" constant="-19" id="kre-DY-p2U"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sba-bI-haD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NLh-ja-L1r"/>
+                                <exclude reference="R1F-gu-TYV"/>
+                                <exclude reference="kre-DY-p2U"/>
+                                <exclude reference="kFG-JA-atf"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sba-bI-haD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NLh-ja-L1r"/>
+                                <include reference="R1F-gu-TYV"/>
+                                <include reference="kre-DY-p2U"/>
+                                <include reference="kFG-JA-atf"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Urq-5j-5ds" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -394,5 +427,6 @@
         <image name="Title.png" width="500" height="200"/>
         <image name="aboutbg.png" width="642" height="362"/>
         <image name="bg.jpg" width="1080" height="1920"/>
+        <image name="contactbg.9.png" width="1922" height="1082"/>
     </resources>
 </document>
