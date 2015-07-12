@@ -20,9 +20,6 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-ji-JhX">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-21" y="-32" width="443" height="664"/>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title.png" translatesAutoresizingMaskIntoConstraints="NO" id="AyN-X4-f56">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -188,14 +185,18 @@
                                 <variation key="widthClass=compact" constant="414"/>
                             </constraint>
                             <constraint firstItem="dvh-6s-93Q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="9so-gg-UN4"/>
+                            <constraint firstItem="sTM-ji-JhX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-37" id="AVi-X4-JOZ"/>
                             <constraint firstItem="5og-73-qPZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="F2h-xb-a6y"/>
                             <constraint firstItem="VuU-by-g7Q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="Fmz-4h-szt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5og-73-qPZ" secondAttribute="trailing" constant="80" id="H1N-6K-tu1"/>
+                            <constraint firstItem="sTM-ji-JhX" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="-32" id="Jw4-vI-Kfy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o6t-GK-Xch" secondAttribute="trailing" constant="80" id="K9O-qX-CnK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VuU-by-g7Q" secondAttribute="trailing" constant="80" id="LNa-KT-gaS"/>
+                            <constraint firstItem="sTM-ji-JhX" firstAttribute="centerX" secondItem="pw2-2f-zfa" secondAttribute="centerX" id="LZF-ZW-SvL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e02-PD-xpd" secondAttribute="trailing" constant="80" id="Qy6-he-dWb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pw2-2f-zfa" secondAttribute="trailing" constant="80" id="Tfc-UQ-2ra"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VVd-oY-mwy" secondAttribute="trailing" constant="80" id="TiM-T4-gOW"/>
+                            <constraint firstItem="sTM-ji-JhX" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Wy4-ZL-Or0"/>
                             <constraint firstItem="o6t-GK-Xch" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="Wz6-XN-gXq"/>
                             <constraint firstItem="AyN-X4-f56" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="12" id="XFy-t8-Wsx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AyN-X4-f56" secondAttribute="trailing" constant="11" id="Xfb-84-l2d"/>
@@ -225,6 +226,10 @@
                                 <exclude reference="5og-73-qPZ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="AVi-X4-JOZ"/>
+                                <exclude reference="Jw4-vI-Kfy"/>
+                                <exclude reference="LZF-ZW-SvL"/>
+                                <exclude reference="Wy4-ZL-Or0"/>
                                 <exclude reference="XFy-t8-Wsx"/>
                                 <exclude reference="Xfb-84-l2d"/>
                                 <exclude reference="eG4-Uw-2MG"/>
@@ -265,6 +270,10 @@
                                 <include reference="5og-73-qPZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="AVi-X4-JOZ"/>
+                                <include reference="Jw4-vI-Kfy"/>
+                                <include reference="LZF-ZW-SvL"/>
+                                <include reference="Wy4-ZL-Or0"/>
                                 <include reference="XFy-t8-Wsx"/>
                                 <include reference="Xfb-84-l2d"/>
                                 <include reference="eG4-Uw-2MG"/>
