@@ -27,6 +27,8 @@
 		E58E10ED1AB647D80093E83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EC1AB647D80093E83E /* UIKit.framework */; };
 		E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */; };
 		E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10F11AB658E00093E83E /* Multi-coloured logo.png */; };
+		E593EDA81B52A232001BADF9 /* ButtonBg.png in Resources */ = {isa = PBXBuildFile; fileRef = E593EDA71B52A232001BADF9 /* ButtonBg.png */; };
+		E593EDAA1B52A885001BADF9 /* ButtonBgBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */; };
 		E5AF53381B48C74B0055C686 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AF53371B48C74B0055C686 /* bg.jpg */; };
 		E5F3B9C91B499135009CC9E7 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F3B9C81B499135009CC9E7 /* Title.png */; };
 		E5F3B9F01B499399009CC9E7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B9CC1B499399009CC9E7 /* AFHTTPRequestOperation.m */; };
@@ -94,6 +96,8 @@
 		E58E10EC1AB647D80093E83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo copy.png"; sourceTree = "<group>"; };
 		E58E10F11AB658E00093E83E /* Multi-coloured logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo.png"; sourceTree = "<group>"; };
+		E593EDA71B52A232001BADF9 /* ButtonBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonBg.png; path = "../Futures Revealed/ButtonBg.png"; sourceTree = "<group>"; };
+		E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBgBlack.png; sourceTree = "<group>"; };
 		E5AF53371B48C74B0055C686 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		E5F3B9C81B499135009CC9E7 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = "../Futures Revealed/Title.png"; sourceTree = "<group>"; };
 		E5F3B9CB1B499399009CC9E7 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -254,7 +258,9 @@
 				E5AF53371B48C74B0055C686 /* bg.jpg */,
 				E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */,
 				E542E6021B4DEC33006BFB3C /* aboutbg.png */,
+				E593EDA71B52A232001BADF9 /* ButtonBg.png */,
 				E569ABE51B51690C008DDEE1 /* contactbg.9.png */,
+				E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */,
 				E58DA0081B516F62006FDB27 /* contactbg.png */,
 				E5F3B9C81B499135009CC9E7 /* Title.png */,
 				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
@@ -394,8 +400,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E593EDAA1B52A885001BADF9 /* ButtonBgBlack.png in Resources */,
 				E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */,
 				E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */,
+				E593EDA81B52A232001BADF9 /* ButtonBg.png in Resources */,
 				E5789F581AB3819500EAFEBD /* Main.storyboard in Resources */,
 				E542E5FE1B4DE481006BFB3C /* aboutbg.9.png in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
