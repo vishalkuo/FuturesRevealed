@@ -29,6 +29,23 @@ static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    CGRect originalFrame = _masterView.frame;
+    CGRect originalTitleFrame = _titleView.frame;
+    CGRect titleFrame = originalTitleFrame;
+    titleFrame.origin.y += 20;
+    _titleView.frame = titleFrame;
+    CGRect frame = _masterView.frame;
+    frame.origin.y += 10;
+    _masterView.frame = frame;
+    [UIView animateWithDuration:0.75
+                          delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                              
+                              _masterView.frame= originalFrame;
+                              _titleView.frame= originalTitleFrame;
+                          } completion:^(BOOL finished) {
+                              
+                          }];
+
     
     [UIView animateWithDuration:0.5 delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
         _masterView.alpha = 1.0;
@@ -169,17 +186,6 @@ static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    CGRect originalFrame = _titleView.frame;
-    CGRect frame = _titleView.frame;
-    frame.origin.y += 10;
-    _titleView.frame = frame;
-    [UIView animateWithDuration:0.5
-                          delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                              
-                              _titleView.frame= originalFrame;
-                          } completion:^(BOOL finished) {
-                            
-                          }];
-}
+   }
 
 @end
