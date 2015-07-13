@@ -28,6 +28,13 @@ static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
+    [UIView animateWithDuration:0.5 delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        _masterView.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        
+    }];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     // Do any additional setup after loading the view, typically from a nib.
     _isInAlternateState = NO;
@@ -159,6 +166,20 @@ static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
         [ToastView showToast:self.view withText:@"No internet. Try again later." withDuaration:1.0];
     }
     
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    CGRect originalFrame = _titleView.frame;
+    CGRect frame = _titleView.frame;
+    frame.origin.y += 10;
+    _titleView.frame = frame;
+    [UIView animateWithDuration:0.5
+                          delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                              
+                              _titleView.frame= originalFrame;
+                          } completion:^(BOOL finished) {
+                            
+                          }];
 }
 
 @end

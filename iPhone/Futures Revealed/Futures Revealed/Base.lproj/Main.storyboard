@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" alpha="0.0" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -181,6 +181,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="e02-PD-xpd" firstAttribute="leading" secondItem="pw2-2f-zfa" secondAttribute="leading" id="3YN-nn-la3"/>
@@ -312,6 +313,7 @@
                         <outlet property="learnMoreButton" destination="VVd-oY-mwy" id="YXK-tI-1be"/>
                         <outlet property="masterView" destination="kh9-bI-dsS" id="awJ-KQ-v4l"/>
                         <outlet property="surveyButton" destination="VuU-by-g7Q" id="S18-SG-FQH"/>
+                        <outlet property="titleView" destination="AyN-X4-f56" id="F9I-9H-jGG"/>
                         <outlet property="websiteButton" destination="e02-PD-xpd" id="yPe-C9-VQp"/>
                     </connections>
                 </viewController>

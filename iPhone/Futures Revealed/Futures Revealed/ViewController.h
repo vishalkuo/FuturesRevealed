@@ -21,5 +21,6 @@
 @property(weak, nonatomic)IBOutlet UIButton *contactButton;
 @property(weak, nonatomic)IBOutlet UIButton *websiteButton;
 @property(weak, nonatomic)IBOutlet UIView *masterView;
+@property(weak, nonatomic)IBOutlet UIView *titleView;
 @end
 
