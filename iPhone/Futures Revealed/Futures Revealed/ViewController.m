@@ -32,12 +32,12 @@ static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
     CGRect originalFrame = _masterView.frame;
     CGRect originalTitleFrame = _titleView.frame;
     CGRect titleFrame = originalTitleFrame;
-    titleFrame.origin.y += 20;
+    titleFrame.origin.y += 12;
     _titleView.frame = titleFrame;
     CGRect frame = _masterView.frame;
     frame.origin.y += 10;
     _masterView.frame = frame;
-    [UIView animateWithDuration:0.75
+    [UIView animateWithDuration:0.55
                           delay:0.1 options:UIViewAnimationOptionCurveEaseOut animations:^{
                               
                               _masterView.frame= originalFrame;
@@ -185,7 +185,5 @@ static NSString *const OFFICAL_SITE = @"http://www.futuresrevealed.ca";
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-   }
 
 @end

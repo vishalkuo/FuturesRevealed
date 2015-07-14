@@ -14,7 +14,6 @@
 		E54B65F81B4B465B009ED0A0 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B65F71B4B465B009ED0A0 /* ToastView.m */; };
 		E54B65FC1B4B4A0F009ED0A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B65FB1B4B4A0F009ED0A0 /* Reachability.m */; };
 		E569ABE41B516805008DDEE1 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E569ABE31B516805008DDEE1 /* ContactViewController.m */; };
-		E569ABE61B51690C008DDEE1 /* contactbg.9.png in Resources */ = {isa = PBXBuildFile; fileRef = E569ABE51B51690C008DDEE1 /* contactbg.9.png */; };
 		E5789F4F1AB3819500EAFEBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F4E1AB3819500EAFEBD /* main.m */; };
 		E5789F521AB3819500EAFEBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F511AB3819500EAFEBD /* AppDelegate.m */; };
 		E5789F551AB3819500EAFEBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F541AB3819500EAFEBD /* ViewController.m */; };
@@ -29,6 +28,7 @@
 		E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E58E10F11AB658E00093E83E /* Multi-coloured logo.png */; };
 		E593EDA81B52A232001BADF9 /* ButtonBg.png in Resources */ = {isa = PBXBuildFile; fileRef = E593EDA71B52A232001BADF9 /* ButtonBg.png */; };
 		E593EDAA1B52A885001BADF9 /* ButtonBgBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */; };
+		E5A935B21B5485B900C8B671 /* CircleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E5A935B11B5485B900C8B671 /* CircleButton.png */; };
 		E5AF53381B48C74B0055C686 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AF53371B48C74B0055C686 /* bg.jpg */; };
 		E5F3B9C91B499135009CC9E7 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = E5F3B9C81B499135009CC9E7 /* Title.png */; };
 		E5F3B9F01B499399009CC9E7 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B9CC1B499399009CC9E7 /* AFHTTPRequestOperation.m */; };
@@ -77,7 +77,6 @@
 		E54B65FB1B4B4A0F009ED0A0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E569ABE21B516805008DDEE1 /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
 		E569ABE31B516805008DDEE1 /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
-		E569ABE51B51690C008DDEE1 /* contactbg.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contactbg.9.png; path = "../Futures Revealed/contactbg.9.png"; sourceTree = "<group>"; };
 		E5789F491AB3819500EAFEBD /* Futures Revealed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Futures Revealed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789F4D1AB3819500EAFEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5789F4E1AB3819500EAFEBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +97,7 @@
 		E58E10F11AB658E00093E83E /* Multi-coloured logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Multi-coloured logo.png"; sourceTree = "<group>"; };
 		E593EDA71B52A232001BADF9 /* ButtonBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonBg.png; path = "../Futures Revealed/ButtonBg.png"; sourceTree = "<group>"; };
 		E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonBgBlack.png; sourceTree = "<group>"; };
+		E5A935B11B5485B900C8B671 /* CircleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircleButton.png; sourceTree = "<group>"; };
 		E5AF53371B48C74B0055C686 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		E5F3B9C81B499135009CC9E7 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Title.png; path = "../Futures Revealed/Title.png"; sourceTree = "<group>"; };
 		E5F3B9CB1B499399009CC9E7 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -259,8 +259,8 @@
 				E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */,
 				E542E6021B4DEC33006BFB3C /* aboutbg.png */,
 				E593EDA71B52A232001BADF9 /* ButtonBg.png */,
-				E569ABE51B51690C008DDEE1 /* contactbg.9.png */,
 				E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */,
+				E5A935B11B5485B900C8B671 /* CircleButton.png */,
 				E58DA0081B516F62006FDB27 /* contactbg.png */,
 				E5F3B9C81B499135009CC9E7 /* Title.png */,
 				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
@@ -400,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A935B21B5485B900C8B671 /* CircleButton.png in Resources */,
 				E593EDAA1B52A885001BADF9 /* ButtonBgBlack.png in Resources */,
 				E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */,
 				E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */,
@@ -408,7 +409,6 @@
 				E542E5FE1B4DE481006BFB3C /* aboutbg.9.png in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
 				E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */,
-				E569ABE61B51690C008DDEE1 /* contactbg.9.png in Resources */,
 				E542E6031B4DEC33006BFB3C /* aboutbg.png in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
 				E5AF53381B48C74B0055C686 /* bg.jpg in Resources */,
