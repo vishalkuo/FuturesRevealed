@@ -21,6 +21,9 @@
 		E5789F5A1AB3819500EAFEBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5789F591AB3819500EAFEBD /* Images.xcassets */; };
 		E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5789F5B1AB3819500EAFEBD /* LaunchScreen.xib */; };
 		E5789F691AB3819500EAFEBD /* Futures_RevealedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5789F681AB3819500EAFEBD /* Futures_RevealedTests.m */; };
+		E58D034B1B548D92005B8FBC /* facebookbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E58D034A1B548D92005B8FBC /* facebookbutton.png */; };
+		E58D034D1B548E08005B8FBC /* twitterbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E58D034C1B548E08005B8FBC /* twitterbutton.png */; };
+		E58D034F1B548EA1005B8FBC /* linkedinbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = E58D034E1B548EA1005B8FBC /* linkedinbtn.png */; };
 		E58DA0091B516F62006FDB27 /* contactbg.png in Resources */ = {isa = PBXBuildFile; fileRef = E58DA0081B516F62006FDB27 /* contactbg.png */; };
 		E58E10EB1AB647C70093E83E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EA1AB647C70093E83E /* QuartzCore.framework */; };
 		E58E10ED1AB647D80093E83E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E10EC1AB647D80093E83E /* UIKit.framework */; };
@@ -49,7 +52,6 @@
 		E5F3B9FF1B499399009CC9E7 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B9ED1B499399009CC9E7 /* UIRefreshControl+AFNetworking.m */; };
 		E5F3BA001B499399009CC9E7 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3B9EF1B499399009CC9E7 /* UIWebView+AFNetworking.m */; };
 		E5F3BA091B4999DD009CC9E7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F3BA081B4999DD009CC9E7 /* TableViewController.m */; };
-		E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */; };
 		E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5F9FB591B4A1163009BEB08 /* TableCell.xib */; };
 		E5F9FB5D1B4A11F0009BEB08 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F9FB5C1B4A11F0009BEB08 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -90,6 +92,9 @@
 		E5789F621AB3819500EAFEBD /* Futures RevealedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Futures RevealedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5789F671AB3819500EAFEBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5789F681AB3819500EAFEBD /* Futures_RevealedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Futures_RevealedTests.m; sourceTree = "<group>"; };
+		E58D034A1B548D92005B8FBC /* facebookbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebookbutton.png; path = "../Futures Revealed/facebookbutton.png"; sourceTree = "<group>"; };
+		E58D034C1B548E08005B8FBC /* twitterbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterbutton.png; sourceTree = "<group>"; };
+		E58D034E1B548EA1005B8FBC /* linkedinbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedinbtn.png; sourceTree = "<group>"; };
 		E58DA0081B516F62006FDB27 /* contactbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contactbg.png; sourceTree = "<group>"; };
 		E58E10EA1AB647C70093E83E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E58E10EC1AB647D80093E83E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -138,7 +143,6 @@
 		E5F3B9EF1B499399009CC9E7 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		E5F3BA071B4999DD009CC9E7 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
 		E5F3BA081B4999DD009CC9E7 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
-		E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = creme_brelee.jpg; path = "../Futures Revealed/creme_brelee.jpg"; sourceTree = "<group>"; };
 		E5F9FB591B4A1163009BEB08 /* TableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		E5F9FB5B1B4A11F0009BEB08 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		E5F9FB5C1B4A11F0009BEB08 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
@@ -256,13 +260,15 @@
 			children = (
 				E542E5FD1B4DE481006BFB3C /* aboutbg.9.png */,
 				E5AF53371B48C74B0055C686 /* bg.jpg */,
-				E5F9FB521B4A05CE009BEB08 /* creme_brelee.jpg */,
 				E542E6021B4DEC33006BFB3C /* aboutbg.png */,
 				E593EDA71B52A232001BADF9 /* ButtonBg.png */,
 				E593EDA91B52A885001BADF9 /* ButtonBgBlack.png */,
 				E5A935B11B5485B900C8B671 /* CircleButton.png */,
 				E58DA0081B516F62006FDB27 /* contactbg.png */,
 				E5F3B9C81B499135009CC9E7 /* Title.png */,
+				E58D034C1B548E08005B8FBC /* twitterbutton.png */,
+				E58D034E1B548EA1005B8FBC /* linkedinbtn.png */,
+				E58D034A1B548D92005B8FBC /* facebookbutton.png */,
 				E58E10F11AB658E00093E83E /* Multi-coloured logo.png */,
 				E58E10EF1AB658A50093E83E /* Multi-coloured logo copy.png */,
 			);
@@ -403,13 +409,15 @@
 				E5A935B21B5485B900C8B671 /* CircleButton.png in Resources */,
 				E593EDAA1B52A885001BADF9 /* ButtonBgBlack.png in Resources */,
 				E58E10F01AB658A50093E83E /* Multi-coloured logo copy.png in Resources */,
-				E5F9FB531B4A05CE009BEB08 /* creme_brelee.jpg in Resources */,
+				E58D034D1B548E08005B8FBC /* twitterbutton.png in Resources */,
 				E593EDA81B52A232001BADF9 /* ButtonBg.png in Resources */,
 				E5789F581AB3819500EAFEBD /* Main.storyboard in Resources */,
 				E542E5FE1B4DE481006BFB3C /* aboutbg.9.png in Resources */,
 				E58E10F21AB658E00093E83E /* Multi-coloured logo.png in Resources */,
 				E5F9FB5A1B4A1163009BEB08 /* TableCell.xib in Resources */,
+				E58D034B1B548D92005B8FBC /* facebookbutton.png in Resources */,
 				E542E6031B4DEC33006BFB3C /* aboutbg.png in Resources */,
+				E58D034F1B548EA1005B8FBC /* linkedinbtn.png in Resources */,
 				E5789F5D1AB3819500EAFEBD /* LaunchScreen.xib in Resources */,
 				E5AF53381B48C74B0055C686 /* bg.jpg in Resources */,
 				E58DA0091B516F62006FDB27 /* contactbg.png in Resources */,

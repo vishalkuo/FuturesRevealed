@@ -485,27 +485,6 @@
                                 <color key="textColor" red="0.0" green="0.58823529409999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-LD-y8w">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="sOF-Uk-ICF">
-                                        <variation key="widthClass=compact" constant="60"/>
-                                    </constraint>
-                                </constraints>
-                                <state key="normal" title="Linke" backgroundImage="CircleButton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="sOF-Uk-ICF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="sOF-Uk-ICF"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3f-AU-e3a">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -533,13 +512,35 @@
                                     </mask>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sx-BV-EGs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="JhI-v0-N9J">
+                                        <variation key="widthClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Email" backgroundImage="CircleButton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JhI-v0-N9J"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="JhI-v0-N9J"/>
+                                    </mask>
+                                </variation>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="246" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3C-4s-1Y4">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8We-j5-pc5"/>
                                     <constraint firstAttribute="width" constant="61" id="Zuq-V0-3If"/>
                                 </constraints>
-                                <state key="normal" title="Twitt" backgroundImage="CircleButton.png">
+                                <state key="normal" backgroundImage="twitterbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -562,7 +563,7 @@
                                         <variation key="widthClass=compact" constant="61"/>
                                     </constraint>
                                 </constraints>
-                                <state key="normal" title="FB" backgroundImage="CircleButton.png">
+                                <state key="normal" backgroundImage="facebookbutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -576,25 +577,25 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sx-BV-EGs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-LD-y8w">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="JhI-v0-N9J">
+                                    <constraint firstAttribute="width" constant="55" id="sOF-Uk-ICF">
                                         <variation key="widthClass=compact" constant="60"/>
                                     </constraint>
                                 </constraints>
-                                <state key="normal" title="Email" backgroundImage="CircleButton.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="linkedinbtn.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="JhI-v0-N9J"/>
+                                        <exclude reference="sOF-Uk-ICF"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="JhI-v0-N9J"/>
+                                        <include reference="sOF-Uk-ICF"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -631,11 +632,11 @@
                             <mask key="subviews">
                                 <exclude reference="sba-bI-haD"/>
                                 <exclude reference="PVE-zd-Leb"/>
-                                <exclude reference="wBg-LD-y8w"/>
                                 <exclude reference="q3f-AU-e3a"/>
+                                <exclude reference="9Sx-BV-EGs"/>
                                 <exclude reference="Q3C-4s-1Y4"/>
                                 <exclude reference="WvZ-Lo-k48"/>
-                                <exclude reference="9Sx-BV-EGs"/>
+                                <exclude reference="wBg-LD-y8w"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="NLh-ja-L1r"/>
@@ -665,11 +666,11 @@
                             <mask key="subviews">
                                 <include reference="sba-bI-haD"/>
                                 <include reference="PVE-zd-Leb"/>
-                                <include reference="wBg-LD-y8w"/>
                                 <include reference="q3f-AU-e3a"/>
+                                <include reference="9Sx-BV-EGs"/>
                                 <include reference="Q3C-4s-1Y4"/>
                                 <include reference="WvZ-Lo-k48"/>
-                                <include reference="9Sx-BV-EGs"/>
+                                <include reference="wBg-LD-y8w"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="NLh-ja-L1r"/>
@@ -769,5 +770,8 @@
         <image name="aboutbg.png" width="642" height="362"/>
         <image name="bg.jpg" width="1080" height="1920"/>
         <image name="contactbg.png" width="1922" height="1073"/>
+        <image name="facebookbutton.png" width="100" height="100"/>
+        <image name="linkedinbtn.png" width="100" height="100"/>
+        <image name="twitterbutton.png" width="100" height="100"/>
     </resources>
 </document>
