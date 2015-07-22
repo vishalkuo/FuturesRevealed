@@ -6,15 +6,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
   <title>Dashboard</title>
   <meta name="Vishal Kuo" content="FuturesRevealed Dashboard">
-
+    <style>
+        table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+    </style>
 
 </head>
 
 <body>
     <div ng-app="app" ng-controller="tableController">
         <table>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>URL</th>
+            </tr>
             <tr ng-repeat="x in names">
-                <td>{{ x }}</td>
+                <td>{{ x.name }}</td>
+                <td>{{ x.description }}</td>
+                <td>{{ x.url }} </td>
             </tr>
         </table>
     </div>
