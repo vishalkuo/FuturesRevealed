@@ -10,29 +10,52 @@
         table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;    
-}
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;    
+    }
+    .big-save{
+        margin-top: 20px;
+    }
     </style>
 
 </head>
 
 <body>
     <div ng-app="app" ng-controller="tableController">
-        <table>
+        <table id = "survey-table">
             <tr>
                 <th>Name</th>
                 <th>Description</th>
                 <th>URL</th>
             </tr>
             <tr ng-repeat="x in names">
-                <td>{{ x.name }}</td>
-                <td>{{ x.description }}</td>
-                <td>{{ x.url }} </td>
+                <td>
+                    <div ng-hide="editingTable[x.name]">{{ x.name }}</div>
+                    <div ng-show ="editingTable[x.name]"><input type="text" ng-model="x.name" /></div>
+                </td>
+                <td>
+                    <div ng-hide="editingTable[x.description]">{{ x.description }}</div>
+                    <div ng-show ="editingTable[x.description]"><input type="text" ng-model="x.description" />
+                </td>
+                <td>
+                    <div ng-hide="editingTable[x.url]">{{ x.url }}</div>
+                    <div ng-show ="editingTable[x.url]"><input type="text" ng-model="x.url" />
+                </td>
+                    
+                <td><button ng-click="modify(tableData)">Edit</button></td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr ng-submit>
+                <td><input id='survey-name'></td>
+                <td><input id='survey=description'></td>
+                <td><input id = 'survey.url'></td>
+                <td><button>Send</button></td>
             </tr>
         </table>
+        
+        <button class="big-save">Save</button>
     </div>
 </div>
 
