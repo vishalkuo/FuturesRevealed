@@ -31,20 +31,23 @@
                 <th>URL</th>
             </tr>
             <tr ng-repeat="x in names">
-                <td>
-                    <div ng-hide="editingTable[x.name]">{{ x.name }}</div>
-                    <div ng-show ="editingTable[x.name]"><input type="text" ng-model="x.name" /></div>
+                <td>    
+                    <div ng-hide="editingData[x.id]">{{ x.name }}</div>
+                    <div ng-show ="editingData[x.id]"><input type="text" ng-model="x.name" /></div>
                 </td>
                 <td>
-                    <div ng-hide="editingTable[x.description]">{{ x.description }}</div>
-                    <div ng-show ="editingTable[x.description]"><input type="text" ng-model="x.description" />
+                    <div ng-hide="editingData[x.id]">{{ x.description }}</div>
+                    <div ng-show ="editingData[x.id]"><input type="text" ng-model="x.description" />
                 </td>
                 <td>
-                    <div ng-hide="editingTable[x.url]">{{ x.url }}</div>
-                    <div ng-show ="editingTable[x.url]"><input type="text" ng-model="x.url" />
+                    <div ng-hide="editingData[x.id]">{{ x.url }}</div>
+                    <div ng-show ="editingData[x.id]"><input type="text" ng-model="x.url" />
                 </td>
-                    
-                <td><button ng-click="modify(tableData)">Edit</button></td>
+                <td>        
+                <button ng-hide="editingData[x.id]" ng-click="modify(x)">Modify</button>
+                <button ng-show="editingData[x.id]" ng-click="update(x)">Update</button>
+                </td>
+
                 <td><button>Delete</button></td>
             </tr>
             <tr ng-submit>
