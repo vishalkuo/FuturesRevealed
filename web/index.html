@@ -48,13 +48,13 @@
                 <button ng-show="editingData[x.id]" ng-click="update(x)">Update</button>
                 </td>
 
-                <td><button>Delete</button></td>
+                <td><button ng-click='deleteSurvey(x)'>Delete</button></td>
             </tr>
             <tr ng-submit>
-                <td><input id='survey-name'></td>
-                <td><input id='survey=description'></td>
-                <td><input id = 'survey.url'></td>
-                <td><button>Send</button></td>
+                <td><input ng-model='name' id='survey-name'></td>
+                <td><input ng-model='description'id='survey=description'></td>
+                <td><input ng-model='url'id = 'survey.url'></td>
+                <td><button ng-click='addSurvey()'>Send</button></td>
             </tr>
         </table>
         
