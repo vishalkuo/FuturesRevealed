@@ -51,4 +51,8 @@ app.controller('tableController', ['$scope', '$http', function($scope, $http){
         
         $scope.names.splice(index, 1)
     }
+    
+    $scope.updateData = function(){
+        $http.post('http://localhost/test.php', {'contents': $scope.names})
+    }
 }])
