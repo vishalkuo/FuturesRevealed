@@ -11,4 +11,4 @@ Futures Revealed is a Canadian organization created to help high school students
 * AngularJS (for administration)
 
 ## Links
- * <a href = http://www.futuresrevealed.ca />Official Futures Revealed Website </a>
+ * http://www.futuresrevealed.ca 
