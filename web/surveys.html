@@ -12,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
         <script lang="javascript" src="js/xlsx.core.min.js"></script> 
         <script lang="javascript" src="js/alasql.js"></script> 
+        <script lang="javascript" src="js/survey-controller.js"></script> 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
     <body>
@@ -21,7 +22,18 @@
 
         <!-- Add your site or application content here -->
         
-
+        <div ng-app = "app" ng-controller = "emailController">
+            <table id="email-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                </tr>
+                <tr ng-repeat="x in emails">
+                    <td>{{ x.name }}</td>
+                    <td>{{ x.email }}</td>
+                </tr>
+            </table>
+        </div>
         
     </body>
 </html>
