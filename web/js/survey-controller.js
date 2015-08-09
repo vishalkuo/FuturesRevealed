@@ -8,4 +8,8 @@ app.controller('emailController', ['$scope', '$http', function($scope, $http){
     .success(function(response){
         $scope.emails = response        
     })
+
+    $scope.exportData = function(){
+        alasql('SELECT * INTO CSV("emails.csv", {headers: true}) FROM ?', [$scope.emails])
+    }
 }])
