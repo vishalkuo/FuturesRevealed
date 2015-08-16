@@ -43,18 +43,13 @@
                     <div ng-hide="editingData[x.id]">{{ x.url }}</div>
                     <div ng-show ="editingData[x.id]"><input type="text" ng-model="x.url" />
                 </td>
-                <td>        
-                <button ng-hide="editingData[x.id]" ng-click="modify(x)">Modify</button>
-                <button ng-show="editingData[x.id]" ng-click="update(x)">Update</button>
-                </td>
-
                 <td><button ng-click='deleteSurvey(x)'>Delete</button></td>
             </tr>
             <tr ng-submit>
                 <td><input ng-model='name' id='survey-name'></td>
                 <td><input ng-model='description'id='survey=description'></td>
                 <td><input ng-model='url'id = 'survey.url'></td>
-                <td><button ng-click='addSurvey()'>Send</button></td>
+                <td><button ng-click='addSurvey()'>Add</button></td>
             </tr>
         </table>
         

@@ -7,11 +7,10 @@ app.controller('tableController', ['$scope', '$http', function($scope, $http){
     $http.get("http://www.vishalkuo.com/phpGet.php")
     .success(function(response){
         for (var i = 0; i < response.length; i++){
-            $scope.editingData[response[i].id] = false
+            response[i].newEntry = false;
             maxID = (response[i].id > maxID)? response[i].id : maxID
         }
         $scope.names = response
-        
     })
     
     $scope.modify = function(tableData){
@@ -27,6 +26,7 @@ app.controller('tableController', ['$scope', '$http', function($scope, $http){
             name: $scope.name,
             description: $scope.description,
             url: $scope.url,
+            newEntry: true,
             id: ++maxID
         }    
         $scope.editingData[maxID] = false
@@ -53,6 +53,9 @@ app.controller('tableController', ['$scope', '$http', function($scope, $http){
     }
     
     $scope.updateData = function(){
-        $http.post('http://localhost/test.php', {'contents': $scope.names})
+        $http.post('http://localhost/updateEmails.php', {'contents': $scope.names})
+        .then(function(response){
+            console.log(response)
+        })
     }
 }])
