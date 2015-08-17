@@ -8,6 +8,7 @@ app.controller('tableController', ['$scope', '$http', function($scope, $http){
     .success(function(response){
         for (var i = 0; i < response.length; i++){
             response[i].newEntry = false;
+            response[i].delete = false;
             maxID = (response[i].id > maxID)? response[i].id : maxID
         }
         $scope.names = response
@@ -42,6 +43,7 @@ app.controller('tableController', ['$scope', '$http', function($scope, $http){
         for (var i = 0; i < $scope.names.length; i++){
             if ($scope.names[i].id === tableData.id){
                 index = i
+                $scope.names[i].delete = true;
                 break
             }
         }
