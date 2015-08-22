@@ -10,5 +10,8 @@ Futures Revealed is a Canadian organization created to help high school students
 * PHP
 * AngularJS (for administration)
 
+## Dates
+February 2015 - August 2015
+
 ## Links
  * http://www.futuresrevealed.ca 
