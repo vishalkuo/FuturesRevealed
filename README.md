@@ -15,5 +15,7 @@ February 2015 - August 2015
 
 ## Links
 http://www.futuresrevealed.ca 
+
 https://play.google.com/store/apps/details?id=vishalkuo.com.futuresrevealed
+
 https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1016694641
