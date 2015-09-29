@@ -11,7 +11,6 @@
 
 
 @interface TableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
-@property(weak, nonatomic)NSArray *recipes;
 @property(strong, nonatomic)NSMutableArray *surveyList;
 
 
